@@ -1,0 +1,230 @@
+%宇宙物理学特論I レポート1
+\section{The\ Sun's\ core\ density\ and\ temperature}
+\subsection{Q1}
+\begin{align*}
+    M(r)=\int^r_04\pi r^2\rho=\int^r_0\frac{3M_{\odot}}{R^3_{\odot}}r^2dr=M_{\odot}\frac{r^3}{R^3_{\odot}}
+\end{align*}
+静水圧平衡の式にこれを代入して、$r=0$から$r=R_{\odot}$まで積分すれば境界条件より
+\begin{align*}
+    P_c&=-\int^{R_{\odot}}_0dP(r)=-\int^{R_{\odot}}_0-\frac{GM(r)\rho}{r^2}dr\\
+    &=\int^{R_{\odot}}_0G\rho M_{\odot}\frac{1}{R^3_{\odot}}rdr=\frac{GM_{\odot}}{2R_{\odot}}\rho
+\end{align*}
+よって、coreにおける状態方程式を用いれば
+\begin{align*}
+    T_c&=\frac{0.6m_p}{k_B\rho}P_c=\frac{0.6m_p}{k_B}\frac{GM_{\odot}}{2R_{\odot}}
+\end{align*}
+各値を代入して単位をKに合わせれば
+\begin{align}
+    T_c\sim0.6\times10^7\ K
+\end{align}
+\subsection{Q2}
+式3の状態方程式より
+\begin{align*}
+    \frac{P_c}{\rho_c}=\frac{k_B}{0.6m_p}T_c
+\end{align*}
+なので$\alpha$から$P_c$を消去すれば
+\begin{align*}
+    \alpha=\left(\frac{k_B}{0.6\pi Gm_p}\frac{T_c}{\rho_c}\right)^{\frac{1}{2}}
+\end{align*}
+よって式5は
+\begin{align*}
+    R_{\odot}=6.9\left(\frac{k_B}{0.6\pi Gm_p}\frac{T_c}{\rho_c}\right)^{\frac{1}{2}}
+\end{align*}
+また式6は
+\begin{align*}
+    M_{\odot}=8\pi\left(\frac{k_B}{0.6\pi Gm_p}\frac{T_c}{\rho_c}\right)^{\frac{3}{2}}\rho_c=8\pi\left(\frac{k_B}{0.6\pi Gm_p}\right)^{\frac{3}{2}}\left(\frac{T_c}{\rho_c}\right)^{\frac{1}{2}}T_c
+\end{align*}
+式5を代入すれば
+\begin{align*}
+    T_c=\frac{M_{\odot}}{8\pi}\left(\frac{k_B}{0.6\pi Gm_p}\right)^{-\frac{3}{2}}\frac{6.9}{R_{\odot}}\left(\frac{k_B}{0.6\pi Gm_p}\right)^{\frac{1}{2}}=\frac{6.9\times0.3}{4}\frac{GM_{\odot}}{R_{\odot}}\frac{m_p}{k_B}
+\end{align*}
+一方、この式を再び式5に代入すれば$T_c$が消去できて
+\begin{align*}
+    \rho_c=\frac{6.9^2}{R^2_{\odot}}\frac{k_B}{0.6\pi Gm_p}\frac{M_{\odot}}{R_{\odot}}\frac{6.9\times0.3}{4}\frac{Gm_p}{k_B}=\frac{6.9^3}{8\pi}\frac{M_{\odot}}{R^3_{\odot}}
+\end{align*}
+よって各値は
+\begin{align}
+    T_c&\sim1.2\times10^7\ K\\
+    \rho_c&\sim76\ g/cm^3
+\end{align}
+\section{Brown\ dwarf}
+\subsection{Q3}
+ビリアル定理は、単原子気体$(\gamma=5/3)$の仮定の元
+\begin{align*}
+    3(\gamma-1)U&=\int^R_0dM(r)\frac{GM(r)}{r}\\
+    U&=\int^R_0dM(r)\frac{GM(r)}{2r}
+\end{align*}
+重力崩壊で得た熱エネルギーを求めるには
+\begin{align}
+    U(R=R_0)-U(R=R)&=\int^{R_0}_0dM(r)\frac{GM(r)}{2r}-\int^R_0dM(r)\frac{GM(r)}{2r}\nonumber\\
+    &=\int^{R_0}_RdM(r)\frac{GM(r)}{2r}
+\end{align}
+\subsection{Q4}
+\begin{align*}
+    U=\frac{3}{2}Nk_BT
+\end{align*}
+を用いる。恒星の質量は水素によるものであり、完全電離していることから陽子のみが質量に寄与していると近似すると
+\begin{align}
+    \frac{3}{2}\frac{M}{m_p}k_BT&=\int^{R_0}_RdM(r)\frac{GM(r)}{2r}\nonumber\\
+    T&=\frac{m_p}{3M}\int^{R_0}_RdM(r)\frac{GM(r)}{r}
+\end{align}
+質量分布の一様性などが与えられていないので、解析を進めるには仮定や近似が必要だが、
+ビリアル温度を見積もるという観点では
+\begin{align*}
+    U\sim k_BT
+\end{align*}
+\begin{align*}
+    \int^{R_0}_RdM(r)\frac{GM(r)}{2r}\sim\frac{GMm_p}{R}
+\end{align*}
+という粗い近似を用いて
+\begin{align}
+    T\sim\frac{GMm_p}{k_BR}
+\end{align}
+\subsection{Q5}
+導出したのですがオーダー的にあっているか判断できませんでした。宇宙論家としてはあっているのですが。。。最後にヒントを用いた回答があります。\\
+\hrulefill\\
+水素が完全にイオン化しているので、褐色矮星を構成しているのは電子と陽子である。静水圧平衡から質量-半径関係式を導くが、まず縮退圧について考える必要がある。褐色矮星が熱平衡であると仮定すると、電子と陽子の運動エネルギーは等しくなるので、電子の運動量が陽子のそれよりも小さくなり、電子の方が容易に縮退するようになる。この考えのもと、縮退圧に寄与するのは電子のみという妥当な仮定を用いる。縮退圧の式の導出は省くが、3次元空間における縮退圧は
+\begin{align*}
+    P=\frac{1}{3}\int^{p_F}_0vp\frac{2}{h^3}4\pi p^2dp
+\end{align*}
+これは電子のフェルミ気体が相対論的か非相対論的かに寄らない一般形であり、今は非相対論的な電子フェルミ気体を考えているので
+\begin{align*}
+    v=\frac{p}{m_e}
+\end{align*}
+より、非相対論的フェルミ気体の縮退圧は
+\begin{align*}
+    P=\frac{8\pi}{3m_eh^3}\int^{p_F}_0p^4dp=\frac{8\pi}{15m_eh^3}p^5_F
+\end{align*}
+ここで$p_F$電子のフェルミ運動量であり、ハイゼンベルグの不確定性原理とパウリ則と電子のスピンによる内部自由度が2であることから
+\begin{align*}
+    n_e=\int^{p_F}_0\frac{2}{h^3}4\pi p^2dp=\frac{8\pi}{3h^3}p^3_F\\
+    \therefore\ p_F=\left(\frac{3h^3n_e}{8\pi}\right)^{\frac{1}{3}}
+\end{align*}
+褐色矮星の総電荷が0であることから、電子数密度は陽子数密度に等しく、陽子数密度は褐色矮星の質量密度を陽子質量で割ればよく
+\begin{align*}
+    p_F=\left(\frac{3h^3\rho}{8\pi m_p}\right)^{\frac{1}{3}}
+\end{align*}
+これを用いると最終定な縮退圧は
+\begin{align*}
+    P=\frac{8\pi}{15m_eh^3}\left(\frac{3h^3\rho}{8\pi m_p}\right)^{\frac{5}{3}}
+\end{align*}
+
+この縮退圧を用いて静水圧平衡の式を計算する。
+\begin{align*}
+    \frac{dP}{dr}=-\frac{GM(r)\rho}{r^2}\ \ \ \ \Longleftrightarrow\ \ \ \ \frac{d}{dr}\left(\frac{r^2}{\rho}\frac{dP}{dr}\right)=-G\frac{dM(r)}{dr}
+\end{align*}
+$M(r)$は半径rの球内にある質量なので
+\begin{align*}
+    \frac{d}{dr}\left(\frac{r^2}{\rho}\frac{dP}{dr}\right)=-4\pi Gr^2\rho(r)
+\end{align*}
+ここで無次元パラメータ$\xi,\ \theta(\xi)$を用いて変数変換
+\begin{align*}
+    r=\alpha\xi\ \ \ \ ,\ \ \ \ \rho=\rho_c\theta^{\frac{3}{2}}\ \ \ \ ,\ \ \ \ \alpha=\left(\frac{5}{8\pi G}\frac{P_c}{\rho_c^2}\right)^{\frac{1}{2}}
+\end{align*}
+を行うと、微分方程式は
+\begin{align*}
+    \frac{d}{d\xi}\left[\frac{\xi^2}{\rho_c\theta^{\frac{3}{2}}}\frac{d}{d\xi}P\right]=-4\pi G\alpha^2\xi^2\rho_c\theta^{\frac{3}{2}}
+\end{align*}
+縮退圧$P$が質量密度$\rho$の$5/3$乗に比例することから
+\begin{align*}
+    P=\frac{8\pi}{15m_eh^3}\left(\frac{3h^3}{8\pi m_p}\right)^{\frac{5}{3}}\rho^{\frac{5}{3}}=P_c\theta^{\frac{5}{2}}
+\end{align*}
+とかけることを用いて微分方程式は
+\begin{align*}
+    \frac{1}{\xi^2}\frac{d}{d\xi}\left[\frac{\xi^2}{\theta^{\frac{3}{2}}}\frac{P_c}{\rho_c}\frac{d}{d\xi}\theta^{\frac{5}{2}}\right]&=-4\pi G\frac{5}{8\pi G}\frac{P_c}{\rho_c^2}\rho_c\theta^{\frac{3}{2}}\\
+    \frac{1}{\xi^2}\frac{d}{d\xi}\left[\frac{\xi^2}{\theta^{\frac{3}{2}}}
+    \frac{5}{2}\theta^{\frac{3}{2}}\frac{d\theta}{d\xi}\right]&=-\frac{5}{2}\theta^{\frac{3}{2}}\\
+    \frac{1}{\xi^2}\frac{d}{d\xi}\left[\xi^2\frac{d\theta}{d\xi}\right]&=-\theta^{\frac{3}{2}}
+\end{align*}
+これをLane-Emden方程式と呼ぶ。
+
+一方、褐色矮星の全質量Mは半径Rを用いて
+\begin{align*}
+    M=\int^R_0dr4\pi r^2\rho(r)=4\pi\alpha^3\rho_c\int^{\xi_1}_0d\xi\xi^2\theta^{\frac{3}{2}}
+\end{align*}
+ただし
+\begin{align*}
+    R=\alpha\xi_1=\xi_1\left(\frac{5}{8\pi G}\frac{P_c}{\rho_c^2}\right)^{\frac{1}{2}}=\xi_1\left(\frac{5}{8\pi G}\frac{1}{\rho_c^2}\right)^{\frac{1}{2}}K^{\frac{1}{2}}\rho_c^{\frac{5}{6}}
+\end{align*}
+\begin{align*}
+    K=\frac{8\pi h^2}{15m_e}\left(\frac{3}{8\pi m_p}\right)^{\frac{5}{3}}
+\end{align*}
+であり、定義より
+\begin{align*}
+    \theta(\xi_1)=0
+\end{align*}
+を満たす。$\xi_1=3.65$を用いて数値計算すると
+\begin{align*}
+    M&=4\pi\left(\frac{5}{8\pi G}\frac{P_c}{\rho_c^2}\right)^{\frac{3}{2}}\rho_c2.71=2.71\times4\pi\left(\frac{5}{8\pi G}\right)^{\frac{3}{2}}K^{\frac{3}{2}}\rho_c^{\frac{1}{2}}
+\end{align*}
+この式とRの式から$\rho_c$を消去すれば
+\begin{align*}
+    M&=2.71\times4\pi\left(\frac{5}{8\pi G}\right)^{\frac{3}{2}}K^{\frac{3}{2}}\left[\xi_1\left(\frac{5}{8\pi G}\right)^{\frac{1}{2}}K^{\frac{1}{2}}\frac{1}{R}\right]^{\frac{1}{2}\times6}\nonumber\\
+    &=2.71\times4\pi\left(\frac{5}{8\pi G}\right)^{\frac{3}{2}}K^{\frac{3}{2}}\xi_1^3\left(\frac{5}{8\pi G}\right)^{\frac{3}{2}}K^{\frac{3}{2}}R^{-3}\nonumber\\
+    &=2.71\xi^34\pi\left(\frac{5}{8\pi G}\right)^3\left(\frac{8\pi h^2}{15m_e}\right)^3\left(\frac{3}{8\pi m_p}\right)^5R^{-3}\nonumber\\
+    &=2.71\xi^3\frac{9}{16\pi m_p^2}\left(\frac{3h^2}{8\pi Gm_em_p}\right)^3R^{-3}\nonumber\\
+    &\sim1\times10^{63}R^{-3}
+\end{align*}
+\begin{align}
+    R\sim1\times10^{21}M^{-\frac{1}{3}}
+\end{align}\\
+\hrulefill\\
+ちなみにヒントを用いると、炭素と酸素によって主に構成される白色矮星では$A/Z=2$だが、褐色矮星は水素でできているので$A/Z=1$であるこれを考慮すると
+\begin{align}
+    R\sim2^{5/3}\times10^{20}M^{-\frac{1}{3}}\approx3\times10^{20}M^{-\frac{1}{3}}
+\end{align}
+\subsection{Q6}
+褐色矮星になる条件は、水素が燃えないために温度が$10^7K$以下で、質量が十分小さいというものが問題文で与えれている。Q4のビリアル温度を用いて見積もると、Q5のRを用いて
+\begin{align*}
+    T\sim\frac{Gm_p}{k_B}\frac{M}{10^{20}M^{-1/3}}=\frac{Gm_p}{k_B}10^{-20}M^{\frac{4}{3}}
+\end{align*}
+Mについて解いて、温度が$10^7K$以下という条件より
+\begin{align}
+    M\sim\left(\frac{k_BT}{Gm_p}10^{20}\right)^{\frac{3}{4}}\lesssim3.7\times10^{31}\ g\nonumber\\
+    \therefore\ M\lesssim0.02M_{\odot}
+\end{align}
+\section{Accretion\ and\ BH\ growth}
+\subsection{Q7}
+考えている対象は文字通りdiskなので、全光度を計算するには2次元曲座標を用いる。また、diskの表と裏からのフラックスの寄与があると考えて
+\begin{align}
+    L&=\int^{\infty}_{r_{in}}2F(r)2\pi rd=\int^{\infty}_{r_{in}}\frac{2GM\Dot{M}}{2r^2}\left(1-\sqrt{\frac{r_{in}}{r}}\right)\nonumber\\
+    &=\frac{3GM\Dot{M}}{2}\int^{\infty}_{r_{in}}\frac{1}{r^2}-\frac{\sqrt{r_{in}}}{r^{\frac{5}{2}}}=\frac{3GM\Dot{M}}{2}\left[-\frac{1}{r}+\frac{2}{3}\frac{\sqrt{r_{in}}}{r^{\frac{3}{2}}}\right]^{\infty}_{r_{in}}\nonumber\\
+    &=\frac{GM\Dot{M}}{2r_{in}}
+\end{align}
+ここで"standard\ accretion\ disk"を考えているので$\Dot{M}$は定数である。
+\subsection{Q8}
+$r_{in}$は中心天体の半径と定義されるので、回転していないBHの半径をSchwarzschild半径と考えれば
+\begin{align*}
+    r_{in}=\frac{2GM}{c^2}
+\end{align*}
+なので、これをQ7で求めた関係式に代入すると
+\begin{align}
+    L=\frac{GM\Dot{M}}{2}\frac{c^2}{2GM}=\frac{c^2}{4}\Dot{M}
+\end{align}
+よって、回転していないBHの光度は質量に依存せず、質量降着率にのみ依存する。
+\subsection{Q9}
+式(3.2)の上限がエディントン光度で与えられるので
+\begin{align*}
+    L&\leq L_{EDD}\\
+    \frac{c^2}{4}\Dot{M}&\leq\frac{4\pi cGMm_p}{\sigma_{e\gamma}}\\
+    \Dot{M}&\leq\frac{16\pi GMm_p}{c\sigma_{e\gamma}}
+\end{align*}
+\begin{align}
+    \therefore\ \Dot{M}_{crit}\sim9\times10^{-9}\ \left(\frac{M}{M_{\odot}}\right)\ M_{\odot}yr^{-1}
+\end{align}
+\subsection{Q10}
+\begin{align*}
+    \frac{1}{9}\times10^9\frac{1}{M}\Dot{M}&\sim1\\
+\end{align*}
+この微分方程式を$t=0[yr]$から$t=t[yr]$まで積分すればよく、対応するBHの質量境界条件は
+\begin{align*}
+    M(t=0)=10M_{\odot}\ \ ,\ \ M(t=t)=10^9M_{\odot}
+\end{align*}
+なので
+\begin{align*}
+    \frac{1}{9}\times10^9\int^{10^9M_{\odot}}_{10M_{\odot}}d\ln{M}&\sim t\\
+    \frac{1}{9}\ln{10^8}\times10^9&\sim t
+\end{align*}
+\begin{align}
+    \therefore\ t\sim2\times10^9\ yr
+\end{align}
