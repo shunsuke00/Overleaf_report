@@ -1,0 +1,178 @@
+\section{Formulation\ of\ galaxies\ and\ clusters\ of\ galaxies}
+\subsection{Q1-1}
+At\ first,\ I\ think\ of\ galaxy.\ I\ think\ that\ given\ information\ indicate\ the\ galaxy\ is\ "Milky\ Way\ Galaxy",\ so\ for\ simplicity\ I\ suppose\ that\ the\ shape\ of\ galaxy\ is disk\ and\ the\ depth\ of\ the\ galaxy\ is\ 1\ kpc.
+\begin{align*}
+    \rho_{gal}&=\frac{2\times10^{11}M_{\odot}}{(20\ \rm{kpc})^2\pi\times1\ \rm{kpc}}\nonumber\\
+    &=\frac{2\times10^{11}\times1.99\times10^{33}\ \rm{g}}{(20\times1000\times3.09\times10^{18}\ \rm{cm})^2\pi\times1\times1000\times3.09\times10^{18}\ \rm{cm}}\nonumber\\
+    &=1.1\times10^{-23}\ \rm{g/cm^3}
+\end{align*}
+%Because\ this\ result\ is\ different\ from\ the\ observation\ value,\ I\ include\ "halo".\ Then\ the\ shape\ is\ ball,\ so
+%\begin{align}
+%    \rho_{gal}&=\frac{2\times10^{11}M_{\odot}}{\frac{4\pi}{3}(20\ \rm{kpc})^3}\nonumber\\
+%    &=\frac{3\times10^{11}\times1.99\times10^{33}\ \rm{g}}{2\pi\times(20\times1000\times3.09\times10^{18}\ \rm{cm})^3}\nonumber\\
+%    &\simeq4.0\times10^{-25}\ \rm{g/cm^3}
+%\end{align}
+
+Second,\ I\ think\ of\ cluster\ of\ galaxies.\ The\ shape\ of\ cluster\ is ball\ so
+\begin{align}
+    \rho_{cl}&=\frac{10^{15}M_{\odot}}{\frac{4\pi}{3}(1.5\ \rm{Mpc})^3}\nonumber\\
+    &=\frac{3\times10^{15}\times1.99\times10^{33}\ \rm{g}}{4\pi\times(1.5\times10^6\times3.09\times10^{18}\ \rm{cm})^3}\nonumber\\
+    &\simeq4.8\times10^{-27}\ \rm{g/cm^3}
+\end{align}
+\subsection{Q1-2}
+Critical\ density\ is
+\begin{align*}
+    \rho_c=\frac{3H^2}{8\pi G}
+\end{align*}
+so\ current\ critical\ density\ is
+\begin{align}
+    \rho_{c0}&=\frac{3H_0^2}{8\pi G}=\frac{3\times(70\times10^5\times(10^6\times3.09\times10^{18})^{-1}\ \rm{cm/s/cm})^2}{8\pi\times6.67\times10^{-8}\ \rm{cm^3/g/s^2}}\nonumber\\
+    &=\frac{3\times49}{8\pi\times6.67\times3.09^2}\times10^{-28}\ \rm{g/cm^3}\nonumber\\
+    &\simeq9.2\times10^{-30}\ \rm{g/cm^3}
+\end{align}
+\subsection{Q1-3}
+In\ the\ matter-dominant\ Universe
+\begin{align*}
+    \rho\propto a^{-3}
+\end{align*}
+so\ Friedmann\ equation\ is
+\begin{align*}
+    H^2=\frac{H_0^2\Omega_m}{a^3}=H_0^2\Omega_m(1+z)^3
+\end{align*}
+Therefore\ critical\ density\ is
+\begin{align*}
+    \rho_c(z)=\frac{3H^2(z)}{8\pi G}=\rho_{c0}\Omega_m(1+z)^3
+\end{align*}
+From\ assumption,\ the\ density\ of\ the\ astronomical\ objects\ when\ it\ became\ virialized\ is
+\begin{align*}
+    \rho\sim180\rho_{amb}=180\rho_{c0}\Omega_m(1+z)^3
+\end{align*}
+Using\ $\Omega_m\sim0.3$\ and\ the\ values\ that\ I\ got\ in\ Q-1,2,\ about\ typical\ galaxies
+\begin{align}
+    1.1\times10^{-23}\ \rm{g/cm^3}&=180\times9.2\times10^{-30}\times0.3(1+z)^3\ \rm{g/cm^3}\nonumber\\
+    1+z&=\left(\frac{1.1\times10^7}{18\times3\times9.2}\right)^{1/3}\nonumber\\
+    z&\simeq27
+\end{align}
+About\ cluster\ of\ galaxies
+\begin{align}
+    z=\left(\frac{4.8\times10^3}{18\times3\times9.2}\right)^{1/3}-1\simeq1.1
+\end{align}
+\section{Star\ formation\ and\ metallicity\ (G-dwarf\ Problem)}
+\subsection{Q2-1}
+From\ the\ given\ equations
+\begin{align}
+    \frac{dM_gZ}{dM_g}&=\frac{dM_gZ}{dt}\left(\frac{dM_g}{dt}\right)^{-1}\nonumber\\
+    &=\frac{[y-(1-\beta)Z]S(t)}{-(1-\beta)S(t)}\nonumber\\
+    &=Z-\frac{y}{1-\beta}
+\end{align}
+\subsection{Q2-2}
+\begin{align}
+    \frac{dZ}{d\ln{M_g}}&=M_g\frac{dZ}{dM_g}=M_g\frac{dZ}{dM_g}+Z\left(\frac{dM_g}{dM_g}-\frac{dM_g}{dM_g}\right)\nonumber\\
+    &=\frac{dM_gZ}{dM_g}-Z=-\frac{y}{1-\beta}
+\end{align}
+\subsection{Q2-3}
+Integrating\ the\ equation
+\begin{align}
+    \int^{\ln{M_g(t)}}_{\ln{M_g(0)}}\frac{dZ}{d\ln{M_g}}d\ln{M_g}&=-\int^{\ln{M_g(t)}}_{\ln{M_g(0)}}\frac{y}{1-\beta}d\ln{M_g}\nonumber\\
+    \int^{Z(t)}_{Z(0)}dZ&=-\frac{y}{1-\beta}\left(\ln{M_g(t)}-\ln{M_g(0)}\right)\nonumber\\
+    Z&=-\frac{y}{1-\beta}\ln{\frac{M_g}{M_0}}
+\end{align}
+\subsection{Q2-4}
+\begin{align*}
+    \frac{M_g}{M_0}=\exp(-\frac{1-\beta}{y}Z)
+\end{align*}
+Therefore\ the\ mass\ of\ the\ stars\ is
+\begin{align}
+    M_s=M_0-M_g=M_0\left[1-\exp(-\frac{1-\beta}{y}Z)\right]
+\end{align}
+$"Z"$\ in\ this\ equation\ is\ metal\ fraction\ of\ gas.\ Therefore\ $"M_s"$\ is\ total\ mass\ of\ stars\ formed\ before\ $t(Z)$,\ i.e.\ total\ mass\ of\ stars\ whose\ metallicity\ is\ less\ than\ $Z$.
+\subsection{Q2-5}
+The\ relation\ between\ $f$\ and\ $Z_{\odot}$\ is
+\begin{align*}
+    f=\frac{M_g(t_{\odot})}{M_0}=\exp(-\frac{1-\beta}{y}Z_{\odot})
+\end{align*}
+So\ in\ terms\ of\ $f$,\ $Z_{\odot}$\ is
+\begin{align*}
+    Z_{\odot}=-\frac{y}{1-\beta}\ln{f}
+\end{align*}
+Therefore\ the\ fraction\ of\ star\ mass\ is
+\begin{align}
+    \frac{M_s}{M_s(t_{\odot})}&=\frac{M_0}{M_0-M_g(t_{\odot})}\left[1-\exp(-\frac{1-\beta}{y}Z)\right]\nonumber\\
+    &=\frac{1}{1-f}\left[1-\exp(-\frac{1-\beta}{y}Z_{\odot}\frac{Z}{Z_{\odot}})\right]\nonumber\\
+    &=\frac{1}{1-f}\left[1-f^{\frac{Z}{Z_{\odot}}}\right]
+\end{align}
+\subsection{Q2-6}
+From\ assumptions
+\begin{align}
+    \frac{M_s(Z<0.5Z_{\odot})}{M_s(t_{\odot})}=\frac{10}{9}\left(1-0.1^{0.5}\right)\simeq0.8
+\end{align}
+Better\ model\ includes\ the\ process\ that\ low\ metal\ fraction\ gas\ is\ supplied\ from\ halo\ or\ outside\ of\ galaxy.
+
+\section{Summary\ of\ "$k$-Inflation"\ (arXiv:hep-th/9904075)}
+I\ choose\ this\ paper\ because\ my\ major\ is\ cosmology,\ in\ paticular\ Inflation.\\
+\textbf{Purpose}
+
+The\ purpose\ of\ this\ paper\ is\ to\ show\ that\ the\ scalar\ field\ $\varphi$\ which\ has\ no\ potential\ but\ have\ generalized\ kinetic\ terms
+\begin{align}
+    S=\int \sqrt{g}\left[-\frac{R}{6\kappa^2}+p(\varphi,\nabla_{\mu}\varphi)\right]
+\end{align}
+can\ drive\ an\ inflationary\ evolution\ of\ the\ same\ type\ as\ the\ usually\ considered\ potential\ driven\ inflation.\ Inflationary\ evolution\ means\ accelerating\ expansion.\\
+\textbf{Difficulties\ before\ the\ paper}
+
+Before\ this\ paper\ was\ published\ (2000),\ there\ was\ no\ preferred\ inflationary\ scenario\ well-consistent\ with\ realistic\ particle\ physics\ model.\ Moreover,\ from\ the\ viewpoint\ of\ string\ theory\ the\ scalar\ field\ indicated\ by\ string\ theory\ is\ a\ candidate\ of\ Inflaton,\ but\ its\ potential\ seems\ not\ to\ be\ able\ to\ implement\ slow-roll.
+
+So\ authors\ want\ to\ investigate\ new\ possibility\ of\ Inflation\ relevant\ to\ this\ string\ scalar\ field\ (this\ is\ new\ approach).\ The\ motivation\ of\ focusing\ on\ the\ Lagrangian\ with\ general\ kinetic\ terms\ is\ the\ fact\ that\ there\ exists\ such\ terms\ in\ string\ theory.\\
+\textbf{Methodology}
+
+Roughly\ speaking,\ the\ methodology\ used\ in\ this\ paper\ is\ theoretical\ calculation.\ In\ the\ field\ of\ Inflation\ theory,\ this\ means\ the\ method\ of\ "field\ theory".\ Specifically\ we\ assume\ the\ form\ of\ Lagrangian\ and\ derive\ field\ equation\ (Einstein\ eq\ and\ matter\ field\ eq).\ Then\ we\ calculate\ time\ dependence\ of\ scale\ factor\ and\ discuss\ whether\ it\ can\ implement\ Inflation\ and\ end\ Inflation.
+
+In\ this\ paper,\ authors\ discussed\ whether\ Inflation\ is\ driven\ from\ different\ viewpoint\ from\ some\ textbook\ I\ have\ read.\ The\ new\ view\ point\ is\ that\ of\ the\ graph\ $p=f(\epsilon)$\ i.e.\ the\ equation\ of\ state\ in\ pressure\ and\ energy\ density\ p-$\epsilon$\ plane.
+
+In\ more\ detail,\ they\ focus\ on\ the\ evolution\ equation\ of\ energy\ density
+\begin{align}
+    \Dot{\epsilon}=-3\sqrt{\epsilon}(\epsilon+p)
+\end{align}
+Because\ during\ Inflation\ Hubble\ parameter\ is\ nearly\ constant\ and\ "proportional"\ to\ energy\ density\ in\ flat\ Universe,
+\begin{align}
+    H\propto\sqrt{\epsilon}\sim const
+\end{align}
+so\ Inflationary\ expansion\ takes\ place\ when\ the\ time\ derivative\ of\ energy\ density\ is\ zero\ i.e.
+\begin{align}
+    \Dot{\epsilon}=0\ \ \ \ \Rightarrow\ \ \ \ p=-\epsilon
+\end{align}
+They\ discussed\ whether\ Inflation\ is\ driven\ by\ investigating\ how\ similar\ to\ $p=-\epsilon$\ the\ equation\ of\ state\ of\ the\ scalar\ field\ in\ $p-\epsilon$\ plane.\\
+\textbf{Findings}
+
+They\ discussed\ 3\ cases\ of\ Lagrangian
+\begin{align}
+    p&=p(\nabla_{\mu}\varphi)\label{3.5}\\
+    p&=p(\varphi,\nabla_{\mu}\varphi)=K(\varphi)X+X^2\label{3.6}\\
+    p&=p(\varphi,\nabla_{\mu}\varphi)=f(\varphi)(-X+X^2)\label{3.7}
+\end{align}
+where\ from\ general\ invariance
+\begin{align*}
+    X=\frac{1}{2}(\nabla_{\mu}\varphi)^2
+\end{align*}
+
+In\ the\ case\ of\ \eqref{3.5}\ when\ p\ is\ non-convex\ and\ has\ some\ oscillatory\ behaviour,\ the\ scale\ factor\ growth\ exponentially
+\begin{align}
+    a(t)\propto\exp(Ht)
+\end{align}
+at\ inflationary\ attractor\ $(p=-\epsilon)$.\ However,\ this\ model\ can't\ naturally\ exit\ Inflation\ and\ can't\ naturally\ transition\ to\ FRW\ Universe.\ So\ they\ generalized\ and\ considered\ the\ Lagrangian\ of\ \eqref{3.6}.
+
+In\ the\ case\ of\ \eqref{3.6},\ they\ assumed\ that\ the\ influence\ of\ $\varphi$-dependence\ of\ Lagrangian\ "p"\ is\ small\ and\ they\ treated\ this\ generalization\ as\ perturbation.\ An\ important\ findings\ is\ the\ condition\ to\ allow\ perturbation\ theory
+\begin{align}\label{3.9}
+    \frac{d}{d\varphi}K(\varphi)^{-1/2}\ll\frac{3}{2}
+\end{align}
+Therefore\ any\ K\ which\ satisfies\ this\ condition\ drives\ inflation.\ In\ this\ model\ termination\ of\ Inflation\ is\ well-defined.\ The\ termination\ takes\ place\ when\ the\ perturbation\ condition\ \eqref{3.9}\ is\ violated
+\begin{align}
+    \frac{d}{d\varphi}K(\varphi)^{-1/2}\sim1
+\end{align}
+
+In\ the\ case\ of\ \eqref{3.7},\ "power-law\ Inflation"\ can\ be\ driven\ when
+\begin{align}
+    f(\varphi)=\frac{4}{9}\frac{4-3\gamma}{\gamma^2}\frac{1}{(\varphi-\varphi_*)^2}\\
+    0<\gamma<\frac{3}{2}
+\end{align}
+
+Overall,\ findings\ is\ that\ the\ kinetic\ Lagrangian\ $p(\varphi,\nabla_{\mu}\varphi)$\ can\ drive\ an\ inflationary\ evolution\ and\ this\ evolution\ can\ end\ naturally.
