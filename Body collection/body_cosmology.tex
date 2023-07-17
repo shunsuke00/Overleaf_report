@@ -1,0 +1,277 @@
+\section{Half\ scale\ factor\ red\ shift}
+I\ suppose\ that\ $t_0$\ is\ the\ present\ time\ and\ $t_h$\ is the\ time\ when\ size\ of\ the\ Universe\ became\ half\ of\ present\ Universe.\ The\ red\ shift\ of\ light\ is\ the\ fractional\ shift\ of\ wavelength
+\begin{align*}
+    z\equiv\frac{\lambda_0-\lambda_h}{\lambda_h}
+\end{align*}
+The\ shift\ of\ wavelength\ is\ caused\ by\ expansion\ of\ the\ Universe,\ so\ supposing\ that\ $\lambda$\ is\ comoving\ wavelength
+\begin{align}
+    z=\frac{a(t_0)\lambda-a(t_h)\lambda}{a(t_h)\lambda}=\frac{a(t_0)}{a(t_h)}-1=\frac{a(t_0)}{\frac{1}{2}a(t_0)}-1=1
+\end{align}
+I\ note\ that\ this\ conclusion\ don't\ need\ the\ conventional\ normalization\ $a(t_0)=1$.
+
+\section{Time\ dependence\ of\ scale\ factor}
+From\ the\ assumption\ curvature\ is\ negligible.\ Then\ Friedmann\ eq\ become
+\begin{align*}
+    \left(\frac{\Dot{a}}{a}\right)^2\propto\rho
+\end{align*}
+Scale\ factor\ dependence\ of\ energy\ density\ follows\ from\ conservation\ law.\ Using\ the\ equation\ of\ state\ of\ matter\ and\ radiation
+\begin{align*}
+    \frac{\Dot{\rho}}{\rho}=-3(1+w_i)\frac{\Dot{a}}{a}&=\begin{cases}
+        -4\frac{\Dot{a}}{a}&RD\\
+        -3\frac{\Dot{a}}{a}&MD
+    \end{cases}\\
+    \therefore\ \ln{\rho(t)}&\propto\begin{cases}
+        -4\ln{a(t)}&RD\\
+        -3\ln{a(t)}&MD
+    \end{cases}\\
+    \therefore\ \rho(t)&\propto\begin{cases}
+        a(t)^{-4}&RD\\
+        a(t)^{-3}&MD
+    \end{cases}
+\end{align*}
+Therefore\ Friedmann\ eq\ is
+\begin{align*}
+    \left(\frac{\Dot{a}}{a}\right)^2&\propto\begin{cases}
+        a(t)^{-4}&RD\\
+        a(t)^{-3}&MD
+    \end{cases}\\
+    \Dot{a}&\propto\begin{cases}
+        a(t)^{-1}&RD\\
+        a(t)^{-1/2}&RD
+    \end{cases}
+\end{align*}
+Integrating\ this\ equation,\ We\ can\ derive\ time\ dependence\ of\ scale\ factor.\ In\ RD
+\begin{align}
+    \int dt\Dot{a}a&\propto\int dt\nonumber\\
+    a^2&\propto\ t\nonumber\\
+    \therefore\ a(t)&\propto t^{1/2}
+\end{align}
+In\ MD
+\begin{align}
+    \int dt\Dot{a}\sqrt{a}&\propto\int dt\nonumber\\
+    a^{3/2}&\propto\ t\nonumber\\
+    \therefore\ a(t)&\propto t^{2/3}
+\end{align}
+
+\section{CMB}
+\subsection{Angular\ extent\ for\ $\Lambda\rm{CDM}$\ model}
+I\ should\ calculate\ the\ angular\ extent\ with\ red\ shift\ $z=1100$\ and\ comoving\ size\ 150\ Mpc\ for\ $\Lambda\rm{CDM}$\ model.\ The\ angular\ extent\ is
+\begin{align*}
+    \theta=\frac{150\ \rm{Mpc}}{\chi}
+\end{align*}
+where\ $\chi$\ is\ the\ comoving\ distance\ to\ the\ recombination\ surface\ $z=1100$\ so
+\begin{align*}
+    \chi&=\int^{t_0}_{t_{rec}}\frac{dt}{a(t)}=\int^{a_0}_{a_{rec}}\frac{da}{a\Dot{a}}=\int^{1100}_0\frac{dz}{H}\\
+    &=H_0^{-1}\int^{1100}_0\frac{dz}{\sqrt{\Omega_m(1+z)^3+\Omega_{\Lambda}}}
+\end{align*}
+Using\ dimensional\ analysis\ and\ numerical\ calculation
+\begin{align}
+    \theta&=\frac{150H_0}{c}\left(\int^{1100}_0\frac{dz}{\sqrt{\Omega_m(1+z)^3+\Omega_{\Lambda}}}\right)^{-1}\nonumber\\
+    &=\frac{150\times68\times10^3}{3\times10^8}\left(\int^{1100}_0\frac{dz}{\sqrt{0.32(1+z)^3+0.68}}\right)^{-1}\nonumber\\
+    &\approx0.63\ \deg
+\end{align}
+\subsection{Angular\ extent\ for\ open\ universe\ model}
+Same\ as\ the\ above\ discussion
+\begin{align}
+    \theta&=\frac{150\times68\times10^3}{3\times10^8}\left(\int^{1100}_0\frac{dz}{\sqrt{0.32(1+z)^3+0.68(1+z)^2}}\right)^{-1}\nonumber\\
+    &\approx0.71\ \deg
+\end{align}
+\subsection{Evidence\ of\ the\ flat\ geometry}
+In\ the\ two-correlation\ function\ of\ CMB\ fluctuations,\ the\ position\ of\ the\ first\ peak\ depends\ on\ the\ curvature.\ From\ the\ concordance\ of\ cosmological\ model,\ our\ universe\ is\ believed\ almost\ flat.
+
+\section{Density\ parameter\ of\ neutrino}
+The\ distribution\ function\ is\ independent\ of\ scale\ factor,\ so\ present\ distribution\ function\ of\ neutrino\ is\ Fermi-Dirac\ distribution
+\begin{align*}
+    f=\frac{1}{\exp\left[\frac{\epsilon(p)}{T_{\nu}}\right]+1}
+\end{align*}
+where\ I\ suppose\ that\ chemical\ potential\ of\ neutrino\ is\ enough\ small\ to\ ignore.\ Therefore\ the\ present\ energy\ density\ of\ relativistic\ neutrino\ is\
+\begin{align*}
+    \rho_R&=\frac{g_{\nu}}{2\pi^2}\int dpp^2\frac{\epsilon(p)}{\exp\left[\frac{\epsilon(p)}{T_{\nu}}\right]+1}\\
+    &\approx\frac{g_{\nu}}{2\pi^2}\int dp\frac{p^3}{\exp\left[\frac{p}{T_{\nu}}\right]+1}\\
+    &=2\frac{7}{8}\frac{\pi^2}{30}T^4_{\nu}
+\end{align*}
+where\ I\ used\ relativistic\ limit\ $T_{\nu}\gg m_{\nu}$,\ so\ $\epsilon(p)=\sqrt{m^2+p^2}\approx p$.\ The\ present\ energy\ density\ of\ non-relativistic\ neutrino\ is
+\begin{align*}
+    \rho_{NR}&=\frac{g_{\nu}}{2\pi^2}\int dpp^2\frac{\epsilon(p)}{\exp\left[\frac{\epsilon(p)}{T_{\nu}}\right]+1}\\
+    &\approx\frac{g_{\nu}}{2\pi^2}\int dp\frac{m_{\nu}p^2}{\exp\left[\frac{p}{T_{\nu}}\right]+1}\\
+    &=m_{\nu}n_{\nu}=m_{\nu}\times2\frac{3}{4}\frac{\zeta(3)}{\pi^2}T^3_{\nu}
+\end{align*}
+where\ I\ used\ non-relativistic\ limit\ $T_{\nu}\ll m_{\nu}$,\ so\ $\epsilon(p)=\sqrt{m^2+p^2}\approx m_{\nu}$.\ I\ skip\ the\ derivation\ of\ these\ formulae\ because\ the\ derivation\ is\ lengthy\ and\ my\ discussion\ will\ become\ unclear.
+
+Next\ I\ will\ derive\ the\ present\ neutrino\ temperature.\ To\ do\ this,\ I\ derive\ the\ relation\ between\ neutrino\ temperature\ $T_{\nu}$\ and\ photon\ temperature\ $T_{\gamma}$.\ This\ relation\ is\ caused\ by\ entropy\ transfer\ from\ $e^{\pm}$\ to\ photon.\ So\ before\ pair\ annihilation\ the\ entropy\ density\ of\ thermal\ bath\ is
+\begin{align*}
+    s=\frac{4}{3}\frac{\pi^2}{30}g_{*S}(T_+)T_{+}^3=\frac{11}{2}\frac{\pi^2}{30}T_{+}^3
+\end{align*}
+And\ entropy\ density\ of\ after\ pair\ annihilation\ is
+\begin{align*}
+    s=\frac{4}{3}\frac{\pi^2}{30}g_{*S}(T_-)T_{-}^3=2\frac{\pi^2}{30}T_{-}^3
+\end{align*}
+Therefore\ from\ conservation\ of\ entropy\ density
+\begin{align*}
+    T_+=\left(\frac{4}{11}\right)^{1/3}T_-
+\end{align*}
+These\ temperatures\ are\ that\ of\ photon.\ After\ pair\ annihilation,\ degree\ of\ freedom\ is\ invariant\ so\ photon\ temperature\ decreases\ with\ $a^{-3}$.\ And\ before\ annihilation,\ neutrino\ temperature\ is\ equal\ to\ photon\ temperature.\ Moreover\ neutrino\ temperature\ decreases\ with\ $a^{-3}$.\ Therefore
+\begin{align*}
+    T_{\nu}=\left(\frac{4}{11}\right)^{1/3}T_{\gamma}
+\end{align*}
+There\ temperatures\ are\ present\ values.\ Using\ present\ photon\ temperature
+\begin{align*}
+    T_{\nu}=\left(\frac{4}{11}\right)^{1/3}\times2.725\ \rm{K}
+\end{align*}
+
+Next\ I\ show\ that\ the\ present\ energy\ density\ of\ relativistic\ neutrino\ is\ much\ smaller\ than\ that\ of\ non-relativistic\ neutrino.
+\begin{align*}
+    \frac{\rho_R}{\rho_{NR}}=\frac{\frac{7}{4}\frac{\pi^2}{30}T^4_{\nu}}{\frac{3}{2}\frac{\zeta(3)}{\pi^2}m_{\nu}T^3_{\nu}}=\frac{7\pi^4}{180\zeta(3)}\frac{T_{\nu}}{m_{\nu}}\approx3\times\frac{T_{\nu}}{m_{\nu}}
+\end{align*}
+Because\ $m_{\nu}$\ is\ mass\ of\ non-relativistic\ neutrino\ $m_{\nu}\gg T_{\nu}$,\ the\ present\ energy\ density\ of\ relativistic\ neutrino\ is\ much\ smaller\ than\ that\ of\ non-relativistic\ neutrino.\ Therefore\ present\ energy\ density\ of\ all\ neutrinos\ is\ approximately
+\begin{align*}
+    \rho_{\nu}\approx\sum_{i=non-rela\ neutrino\ generation}\rho_i
+\end{align*}
+
+Therefore\ using\ dimensional\ analysis\ present\ density\ parameter\ of\ neutrinos\ is
+\begin{align*}
+    \Omega_{\nu}h^2&\approx\frac{\sum_i\rho_i}{\rho_{c0}}h^2=\frac{8\pi G}{3H^2_0}h^2\times\frac{3}{2}\frac{\zeta(3)}{\pi^2}T^3_{\nu}\sum_im_{\nu,i}\\
+    &=\frac{4\zeta(3)}{\pi}\frac{G}{(100\ \rm{km/s/Mpc})^2}T^3_{\nu}\sum_im_{\nu,i}\\
+    &=\frac{4\zeta(3)}{\pi}\frac{G}{(100\ \rm{km/s/Mpc})^2}\left(\frac{k_BT_{\nu}}{\hbar c}\right)^3\frac{1.6\times10^{-19}}{c^2}\sum_im_{\nu,i}
+\end{align*}
+\begin{align}
+    \therefore\ \Omega_{\nu}h^2\approx\frac{\sum_im_{\nu,i}\ \rm{[eV]}}{94.1\ \rm{[eV]}}
+\end{align}
+
+\section{Baryon\ freeze-out}
+At\ first,\ I\ deform\ the\ given\ Boltzmann\ eq.\ This\ part\ is\ relatively\ precise\ than\ following\ part.\ Because\ the\ temperature\ is\ inversely\ proportional\ to\ scale\ factor,\ L.H.S\ of\ Boltzmann\ eq\ become
+\begin{align*}
+    \frac{1}{a^3}\frac{d}{dt}(n_ba^3)=T^3\frac{d}{dt}\left(\frac{n_b}{T^3}\right)=T^3\frac{dY_b}{dt}
+\end{align*}
+Where\ I\ defined\ something\ like\ the\ number\ of\ particle\ $Y_b\equiv n_b/T^3$.\ Then\ I\ define\ $x\equiv m_b/T$.
+\begin{align*}
+    \frac{dx}{dt}&=m_b\frac{d}{dt}T^{-1}=-\frac{m_b}{T}\frac{1}{T}\frac{dT}{dt}=-xa\frac{d}{dt}a^{-1}=xH
+\end{align*}
+Therefore\ Boltzmann\ eq\ becomes
+\begin{align*}
+    \frac{dY_b}{dx}&=-\left(\frac{dx}{dt}\right)^{-1}T^{-3}\braket{\sigma v}[n_b^2-(n_b^{eq})^2]\\
+    &=-\frac{T^3}{xH}\braket{\sigma v}[Y_b^2-(Y_b^{eq})^2]
+\end{align*}
+Then\ I\ deform\ R.H.S\ to\ a\ function\ of\ $x$.\ To\ do\ this,\ I\ use\ the\ relation\ in\ radiation\ dominant\ $H\propto T^2$\ because\ freeze-out\ took\ place\ in\ the\ early\ universe.
+\begin{align*}
+    \frac{H(T)}{H(T=m_b)}=\frac{T^2}{m_b^2}=\frac{1}{x^2}
+\end{align*}
+Therefore
+\begin{align*}
+    \frac{dY_b}{dx}&=-\frac{1}{x^2}\frac{x^3T^3}{H(T=m_b)}\braket{\sigma v}[Y_b^2-(Y_b^{eq})^2]\\
+    &=-\frac{1}{x^2}\frac{m_b^3\braket{\sigma v}}{H(T=m_b)}[Y_b^2-(Y_b^{eq})^2]\\
+    &\equiv-\frac{\lambda}{x^2}[Y_b^2-(Y_b^{eq})^2]
+\end{align*}
+
+Next,\ I\ solve\ this\ equation\ and\ derive\ the\ present\ number\ density\ of\ baryon.\ For\ the\ purpose\ of\ this,\ we\ just\ consider\ non-relativistic\ limit\ $x=m_b/T\gg1$.\ In\ this\ limit\ $Y_b^{eq}$\ term\ is\ negligible\ because
+\begin{align*}
+    Y_b^{eq}\propto n_b\propto\exp[-x]
+\end{align*}
+(For\ the\ validity\ of\ this\ approximation,\ I\ suspect\ that\ the\ assumption\ $T\sim40m_p$\ is\ not\ very\ good\ and\ controversial.\ I\ think\ that\ $T\sim m_p/10$\ is\ non-controversial.\ But\ anyway\ I\ will\ continue.)
+Therefore\ the\ equation\ becomes
+\begin{align*}
+    \frac{dY_b}{dx}&=-\frac{\lambda}{x^2}Y_b^2\\
+    -\frac{1}{Y_b^2}\frac{dY_b}{dx}&=\frac{\lambda}{x^2}\\
+    \frac{d}{dx}Y_b^{-1}&\frac{\lambda}{x^2}
+\end{align*}
+Integrating\ this\ equation\ from\ the\ freeze-out\ (lower\ index\ is\ "f")\ temperature\ to\ the\ terminal\ (lower\ index\ is\ "t")\ temperature\ when\ $Y_b\approx$const\ and\ before\ other\ particle\ annihilation\ starts
+\begin{align*}
+    \frac{1}{Y_{bt}}-\frac{1}{Y_{bf}}=-\frac{\lambda}{x_t}+\frac{\lambda}{x_f}
+\end{align*}
+Supposing\ $Y_{bf}\gg Y_{bt}$\ and\ $x_f\ll x_t$
+\begin{align*}
+    \frac{1}{Y_{bt}}=\frac{\lambda}{x_f}
+\end{align*}
+because\ after\ freeze-out\ $n_b\propto a^{-3}$,\ the\ present\ (lower\ index\ is\ "0")\ baryon\ number\ density\ is
+\begin{align*}
+    n_{b0}=\left(\frac{a_t}{a_0}\right)^3n_{bt}=\left(\frac{a_tT_t}{a_0T_0}\right)^3T_0^3Y_{bt}=T_{0}^3\frac{x_f}{\lambda}=T^3_0\frac{m_b}{T_f}\frac{H(T=m_b)}{m_b^3\braket{\sigma v}}
+\end{align*}
+Where\ I\ used\ the\ simplified\ relation\ $T\propto a^{-1}$.\ Using\ the\ formula\ of\ Hubble\ parameter\ in\ radiation\ dominant
+\begin{align*}
+    H\approx\sqrt{\frac{\pi^2}{90}g_*}\frac{T^2}{M_{pl}}
+\end{align*}
+and\ substituting\ the\ given\ value
+\begin{align*}
+    n_{b0}&\sim \frac{T^3_0}{40\times100\times m_p}\sqrt{\frac{\pi^2}{90}g_*(T=m_p)}\frac{m_p^2}{M_{pl}}\\
+    &=\frac{\pi}{4\times10^3}\sqrt{\frac{g_*(T=m_p)}{90}}\frac{T^3_0m_p}{M_{pl}}
+\end{align*}
+Where\ I\ ignored\ the\ mass\ difference\ between\ proton\ and\ neutron.\ Supposing\ $g_*(m_p)\approx g_*(1GeV)\sim90$\ and\ using
+\begin{align*}
+    M_{pl}=\sqrt{\frac{\hbar c}{8\pi G}}\approx2.4\times10^{18}\ \rm{GeV}
+\end{align*}
+from\ dimensional\ analysis
+\begin{align}
+    n_{b0}&\sim\frac{\pi}{4\times10^3}\frac{1}{2.4\times10^{18}}\left(\frac{k_BT_0}{\hbar c}\right)^3\ \rm{m^{-3}}\sim10^{-13}\ \rm{m^{-3}}
+\end{align}
+
+The\ corresponding\ present\ density\ parameter\ of\ baryon\ is
+\begin{align*}
+    \Omega_b\sim10^{-13}
+\end{align*}
+so\ observed\ baryon\ density\ parameter\ is\ much\ larger\ than\ the\ prediction.\ This\ requires\ the\ production\ of\ baryon\ in\ the\ early\ universe\ so\ called\ Baryogenesis.\ In\ terms\ of\ calculation\ to\ realize\ observed\ baryon\ density\ parameter,\ we\ need\ to\ take\ into\ account\ baryon\ asymmetry.
+
+\section{Horizon\ problem}
+\textbf{Discussion\ of\ the\ horizon\ problem}
+
+Roughly\ speaking,\ the\ horizon\ problem\ is\ that\ it\ is\ required\ that\ the\ uncausal\ regions\ have\ similar\ properties\ as\ initial\ condition.
+
+Causality\ can\ be\ discussed\ by\ the\ particle\ horizon
+\begin{align*}
+    d_h=\eta-\eta_i=\int^{t}_{t_i}\frac{dt}{a(t)}
+\end{align*}
+Where\ lower\ index\ "i"\ means\ the\ Big\ Bang\ singularity.\ Deforming\ this
+\begin{align*}
+    d_h=\int^{t}_{t_i}\frac{dt}{a(t)}=\int^a_{a_i}\frac{da}{a\Dot{a}}=\int^{\ln{a}}_{\ln{a_i}}\frac{d\ln{a}}{aH}
+\end{align*}
+This\ quantity\ (particle\ horizon)\ is\ approximately\ comoving\ Hubble\ radius
+\begin{align*}
+    d_h\sim(aH)^{-1}
+\end{align*}
+This\ is\ because\ for\ matter\ dominant\ era\ comoving\ Hubble\ radius
+\begin{align*}
+    (aH)^{-1}\propto(a\rho^{1/2})^{-1}\propto(a^{1-3/2})^{-1}=a^{1/2}\propto t^{{1/3}}
+\end{align*}
+monotonically\ increases\ therefore\ $d_h$\ is\ dominated\ by\ $(aH)^{-1}$\ of\ matter\ dominant\ era.\ (Moreover\ the\ fact\ $t_{eq}\sim50\ \rm{kyr}$\ and\ $t_0\sim10\ billion\ yr$\ supports\ this\ approximation.)
+
+Then\ I\ will\ discuss\ the\ horizon\ problem.\ From\ above\ discussion
+\begin{align}
+    d_h(\eta_{rec})=\eta_{rec}-\eta_i\ll\eta_0-\eta_i=d_h(\eta_0)
+\end{align}
+where\ the\ lower\ index\ "rec"\ means\ recombination.\ This\ equation\ means\ that\ two\ CMB\ photons\ coming\ from\ opposite\ direction\ have\ no\ causal\ contact\ until\ we\ observe\ them.\ But\ CMB\ observation\ indicates\ they\ have\ the\ same\ temperature.
+
+Next,\ I\ will\ discuss\ more\ quantitatively\ by\ assuming\ the\ matter\ and\ radiation\ universe.\ Then\ the\ comoving\ Hubble\ radius\ is
+\begin{align*}
+    (aH)^{-1}&=(H_0a\sqrt{\Omega_ma^{-3}+\Omega_ra^{-4}})^{-1}\\
+    &=\left(H_0\sqrt{\Omega_m}\sqrt{\frac{1}{a}+\frac{\Omega_r}{\Omega_m}\frac{1}{a^2}}\right)^{-1}\\
+    &=\frac{H_0^{-1}}{\sqrt{\Omega_m}}\frac{a}{\sqrt{a+a_{eq}}}
+\end{align*}
+Therefore\ by\ taking\ $\eta_i=0$\ the\ particle\ horizon\ is
+\begin{align*}
+    d_h(\eta)=\eta&=\frac{H_0^{-1}}{\sqrt{\Omega_m}}\int^a_0\frac{da}{\sqrt{a+a_{eq}}}\\
+    &=\frac{2H_0^{-1}}{\sqrt{\Omega_m}}(\sqrt{a+a_{eq}}-\sqrt{a_{eq}})
+\end{align*}
+Using\ $z_{rec}=1100$,\ $z_{eq}=3400$\ and\ angular\ diameter\ distance,\ the\ angular\ extent\ of\ the\ causal\ contact\ length\ is
+\begin{align}
+    \theta=\frac{2\eta_{rec}}{\eta_0-\eta_{rec}}=\frac{2\times(\sqrt{1100^{-1}+3400^{-1}}-\sqrt{3400^{-1}})}{1-(\sqrt{1100^{-1}+3400^{-1}}-\sqrt{3400^{-1}})}\sim2\deg
+\end{align}
+This\ means\ that\ the\ causally\ connected\ region\ at\ recombination\ is\ viewed\ by\ us\ with\ 2\ $\deg$\ of\ extent.\ This\ is\ too\ small\ region\ to\ explain\ the\ isotropy\ of\ CMB.\\\\
+\textbf{Explanation\ why\ an\ inflationary\ scenario\ can\ resolve\ the\ horizon\ problem}
+
+During\ inflation\ period,\ the\ universe\ undergoes\ the\ accelerated\ expansion.\ This\ is\ equivalent\ to
+\begin{align*}
+    \frac{d}{dt}(aH)^{-1}<0
+\end{align*}
+This\ means\ that\ the\ $(aH)^{-1}$\ of\ inflation\ period\ contributes\ to\ particle\ horizon\ significantly.\ Therefore\ the\ particle\ horizon\ at\ recombination\ $d_h(\eta_{rec})=\eta_{rec}-\eta_0$\ is\ larger\ than\ that\ of\ the\ Big\ Bang\ universe.\ Because\ of\ this,\ the\ CMB\ we\ observe\ have\ contacted\ before\ recombination.\ Thus\ inflationary\ scenario\ can\ explain\ CMB\ isotropy.
+
+Next\ considering\ the\ inflationary\ particle\ dominant\ flat\ universe,\ I\ will\ show\ the\ statement\ "the\ particle\ horizon\ at\ recombination\ $d_h(\eta_{rec})=\eta_{rec}-\eta_0$\ is\ larger\ than\ that\ of\ the\ Big\ Bang\ universe"\ is\ true.\ In\ this\ model\ the\ comoving\ Hubble\ radius\ is
+\begin{align*}
+    (aH)^{-1}=\left(aH_0a^{-\frac{3}{2}(1+w)}\right)^{-1}=H_0^{-1}a^{\frac{1}{2}(1+3w)}
+\end{align*}
+where\ $w$\ is\ the\ parameter\ of\ the\ equation\ of\ state\ and\ satisfy\ $1+3w<0$\ in\ order\ to\ expand\ the\ universe.\ Then\ particle\ horizon\ is
+\begin{align}
+    d_h(\eta)&=H_0^{-1}\int^{\ln{a}}_{\ln{a_i}}a^{\frac{1}{2}(1+3w)}d\ln{a}\nonumber\\
+    &=H_0^{-1}\int^{\ln{a}}_{\ln{a_i}}\exp\left[\frac{1}{2}(1+3w)\ln{a}\right]d\ln{a}\nonumber\\
+    &=\frac{2H_0^{-1}}{1+3w}\left[a^{\frac{1}{2}(1+3w)}-a_i^{\frac{1}{2}(1+3w)}\right]\nonumber\\
+    &\to-\frac{2H_0^{-1}}{1+3w}a_i^{\frac{1}{2}(1+3w)}\ \to\infty\ \ (a\to0)
+\end{align}
+This\ corresponds\ to\ $\eta_i\to-\infty$,\ thus\ the\ particle\ horizon\ at\ recombination\ $d_h(\eta_{rec})=\eta_{rec}-\eta_0$\ is\ larger\ than\ that\ of\ the\ Big\ Bang\ universe.
