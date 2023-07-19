@@ -1,0 +1,212 @@
+\section{Lorentz\ boost}
+Supposing\ the\ mass\ of\ electron\ is\ $m$,\ the\ total\ momentum\ is
+\begin{align*}
+    P^{\mu}&=(11.5,\sqrt{8^2-m^2}-\sqrt{3.5^2-m^2},0,0)\\
+    &\simeq(11.5,4.5,0,0)
+\end{align*}
+where\ I\ approximated\ that\ electron\ mass\ is\ negligible\ because\ $m\sim0.5$\ MeV\ is\ much\ smaller\ than\ the\ energy\ scale\ GeV.\ And\ I\ represented\ above\ momentum\ with\ GeV.\ On\ the\ other\ hand\ in\ center\ of\ mass\ frame,\ supposing\ that\ the\ electron\ and\ the\ positron\ have\ opposite\ momentum\ $|\bm{p}|$,\ the\ total\ momentum\ is
+\begin{align*}
+    P^{\prime\mu}=(2\sqrt{\bm{p}^2+m^2},0,0,0)
+\end{align*}
+From\ the\ Lorentz\ invariant\ quantity
+\begin{align*}
+    4(\bm{p}^2+m^2)=11.5^2-4.5^2=112
+\end{align*}
+Therefore\ the\ Lorentz\ factor\ is
+\begin{align*}
+    P^0&=P^{\prime0}\gamma\\
+    \gamma&=\frac{P^0}{P^{\prime0}}=\frac{11.5}{2\sqrt{\bm{p}^2+m^2}}=\frac{11.5}{\sqrt{112}}
+\end{align*}
+Therefore\ the\ Lorentz\ boost\ is
+\begin{align}
+    \beta\gamma&=\sqrt{1-\frac{1}{\gamma^2}}\gamma=\sqrt{\gamma^2-1}\nonumber\\
+    &=\sqrt{\left(\frac{11.5}{\sqrt{112}}\right)^2-1}\simeq0.43
+\end{align}
+\clearpage
+\section{Production\ of\ anti-proton}
+From\ the\ baryon\ number\ conservation,\ I\ should\ consider\ the\ below\ process
+\begin{align*}
+    p\ +\ p\ \to\ p\ +\ p\ +\ p\ +\ \Bar{p}
+\end{align*}
+In\ the\ center\ of\ mass\ frame,\ all\ particles\ of\ final\ state\ are\ at\ rest\ for\ the\ minimum\ proton\ energy.\ The\ total\ momentum\ in\ laboratory\ frame\ is
+\begin{align*}
+    P^{\mu}=(E_{min}+m,|\bm{p}|,0,0)
+\end{align*}
+($\bm{p}$\ is\ the\ momentum\ of\ incoming\ proton\ and\ I\ work\ in\ natural\ unit)\ And\ the\ momentum\ in\ center\ of\ mass\ frame\ is
+\begin{align*}
+    P^{\prime\mu}=(4m,0,0,0)
+\end{align*}
+In\ order\ to\ relate\ these\ two\ momentum,\ I\ build\ a\ Lorentz\ invariant\ quantity.\ Therefore
+\begin{align*}
+    P^{\mu}P_{\mu}&=P^{\prime\mu}P_{\prime\mu}\\
+    (E_{min}+m)^2-\bm{p}^2&=16m^2\\
+    E_{min}^2+2mE_{min}-(E_{min}^2-m^2)&=15m^2\\
+    2mE_{min}&=14m^2
+\end{align*}
+Therefore
+\begin{align}
+    E_{min}=4mc^2
+\end{align}
+
+\section{Class\ of\ meson}
+Pseudo-scalar\ meson\ group
+\begin{align}
+    \pi^+\ \ ,\ \ \eta^{\prime}\ \ ,\ \ D_s^+
+\end{align}
+Vector\ meson\ group
+\begin{align}
+    \rho^+\ \ ,\ \ K_S^0\ \ ,\ \ \Upsilon
+\end{align}
+
+\section{Klein-Gordon\ eq}
+\begin{align}
+    \partial_{\mu}\frac{\delta\mathcal{L}}{\delta(\partial_{\mu}\phi)}-\frac{\delta\mathcal{L}}{\delta\phi}&=0\nonumber\\
+    \partial_{\mu}\partial^{\mu}\phi-(-m^2\phi)&=0\nonumber\\
+    (\partial_{\mu}\partial^{\mu}+m^2)\phi&=0
+\end{align}
+
+\section{Charge\ conjugation}
+The\ solution\ of\ Dirac\ eq\ are
+\begin{align*}
+    \psi^{(1)}_p\propto e^{-ip\cdot x}\begin{pmatrix}
+        1\\
+        0\\
+        \frac{p_z}{E+m}\\
+        \frac{p_x+ip_y}{E+m}
+    \end{pmatrix}\ \ &,\ \ \psi^{(2)}_p\propto e^{-ip\cdot x}\begin{pmatrix}
+        0\\
+        1\\
+        \frac{p_x-ip_y}{E+m}\\
+        \frac{-p_z}{E+m}
+    \end{pmatrix}\\
+    \psi^{(1)}_a\propto e^{ip\cdot x}\begin{pmatrix}
+        \frac{p_x-ip_i}{E+m}\\
+        \frac{-p_z}{E+m}\\
+        0\\
+        1
+    \end{pmatrix}\ \ &,\ \ \psi^{(2)}_a\propto e^{ip\cdot x}\begin{pmatrix}
+        \frac{p_z}{E+m}\\
+        \frac{p_x+ip_y}{E+m}\\
+        1\\
+        0
+    \end{pmatrix}
+\end{align*}
+The\ charge\ conjugation\ is\ the\ transformation\ which\ switches\ the\ particle\ and\ the\ anti-particle.\ So\ assuming\ 
+\begin{align*}
+    \Hat{C}\psi=i\gamma^2\psi^*
+\end{align*}
+I\ will\ confirm\ this\ transformation\ satisfies\ the\ above\ statement.
+\begin{align}
+    \Hat{C}\psi^{(1)}_p&\propto ie^{ip\cdot x}\begin{pmatrix}
+        &&&-i\\
+        &&i&\\
+        &i&&\\
+        -i&&&
+    \end{pmatrix}\begin{pmatrix}
+        1\\
+        0\\
+        \frac{p_z}{E+m}\\
+        \frac{p_x-ip_y}{E+m}
+    \end{pmatrix}\nonumber\\
+    &=e^{ip\cdot x}\begin{pmatrix}
+        &&&1\\
+        &&-1&\\
+        &-1&&\\
+        1&&&
+    \end{pmatrix}\begin{pmatrix}
+        1\\
+        0\\
+        \frac{p_z}{E+m}\\
+        \frac{p_x-ip_y}{E+m}
+    \end{pmatrix}\nonumber\\
+    &=e^{ip\cdot x}\begin{pmatrix}
+        \frac{p_x-ip_y}{E+m}\\
+        \frac{-p_z}{E+m}\\
+        0\\
+        1
+    \end{pmatrix}=\psi^{(1)}_a
+\end{align}
+
+\begin{align}
+    \Hat{C}\psi^{(2)}_p&\propto e^{ip\cdot x}\begin{pmatrix}
+        &&&1\\
+        &&-1&\\
+        &-1&&\\
+        1&&&
+    \end{pmatrix}\begin{pmatrix}
+        0\\
+        1\\
+        \frac{p_x+ip_y}{E+m}\\
+        \frac{-p_z}{E+m}
+    \end{pmatrix}\nonumber\\
+    &=e^{ip\cdot x}\begin{pmatrix}
+        \frac{-p_z}{E+m}\\
+        \frac{-p_x-ip_y}{E+m}\\
+        -1\\
+        0
+    \end{pmatrix}\propto e^{ip\cdot x}\begin{pmatrix}
+        \frac{p_z}{E+m}\\
+        \frac{p_x+ip_y}{E+m}\\
+        1\\
+        0
+    \end{pmatrix}=\psi^{(2)}_a
+\end{align}
+
+\begin{align}
+    \Hat{C}\psi^{(1)}_a&\propto e^{-ip\cdot x}\begin{pmatrix}
+        &&&1\\
+        &&-1&\\
+        &-1&&\\
+        1&&&
+    \end{pmatrix}\begin{pmatrix}
+        \frac{p_x+ip_i}{E+m}\\
+        \frac{-p_z}{E+m}\\
+        0\\
+        1
+    \end{pmatrix}\nonumber\\
+    &=e^{-ip\cdot x}\begin{pmatrix}
+        1\\
+        0\\
+        \frac{p_z}{E+m}\\
+        \frac{p_x+ip_y}{E+m}
+    \end{pmatrix}=\psi^{(1)}_p
+\end{align}
+
+\begin{align}
+    \Hat{C}\psi^{(2)}_a&\propto e^{-ip\cdot x}\begin{pmatrix}
+        &&&1\\
+        &&-1&\\
+        &-1&&\\
+        1&&&
+    \end{pmatrix}\begin{pmatrix}
+        \frac{p_z}{E+m}\\
+        \frac{p_x-ip_y}{E+m}\\
+        1\\
+        0
+    \end{pmatrix}\nonumber\\
+    &=e^{-ip\cdot x}\begin{pmatrix}
+        0\\
+        -1\\
+        \frac{-p_x+ip_y}{E+m}\\
+        \frac{p_z}{E+m}
+    \end{pmatrix}\propto e^{-ip\cdot x}\begin{pmatrix}
+        0\\
+        1\\
+        \frac{p_x-ip_y}{E+m}\\
+        \frac{-p_z}{E+m}
+    \end{pmatrix}=\psi^{(2)}_p
+\end{align}
+Therefore\ the\ given\ formula\ of\ charge\ conjugation\ switches\ the\ particle\ and\ the\ anti-particle.
+\clearpage
+\section{Branching\ fractions\ of\ Higgs}
+The\ coupling\ constant\ between\ Higgs\ and\ fermions\ is\ proportional\ to\ fermion\ mass.\ So\ the\ fraction\ of\ branching\ fractions\ is\ equal to\ square\ of\ the\ fraction\ of\ masses.\ Therefore
+\begin{align}
+    \frac{B_{b\Bar{b}}}{B_{\tau\tau}}=\left(\frac{m_b}{m_{\tau}}\right)^2\simeq\left(\frac{4.2\times10^3}{1.8\times10^3}\right)^2\simeq5
+\end{align}
+
+\begin{align}
+    \frac{B_{c\Bar{c}}}{B_{\tau\tau}}=\left(\frac{m_c}{m_{\tau}}\right)^2\simeq\left(\frac{1.2\times10^3}{1.8\times10^3}\right)^2\simeq0.4
+\end{align}
+
+\section{Feynmann\ diagram}
+I\ drawed\ on\ next\ page.
