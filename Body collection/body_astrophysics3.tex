@@ -1,0 +1,186 @@
+\section{Cosmological\ parameter}
+I\ will\ refer\ to\ the\ result\ of\ not\ "Planck+BAO"\ but\ "planck\ alone".\ Hubble\ constant\ is
+\begin{align}
+    H_0=67.36\pm0.54\ \rm{km/s/Mpc}
+\end{align}
+The\ density\ parameter\ of\ the\ cosmological\ constant
+\begin{align}
+    \Omega_{\Lambda}=0.6847\pm0.0073
+\end{align}
+The\ density\ parameter\ of\ the\ matter
+\begin{align}
+    \Omega_m=0.3153\pm0.0073
+\end{align}
+
+\section{Age\ of\ the\ universe}
+I\ will\ calculate\ the\ age\ of\ the\ universe\ with\ $\Lambda$CDM\ model.\ Because\ the\ contributions\ from\ the\ matter\ dominant\ era\ and\ $\Lambda$\ dominant\ era\ are\ much\ larger\ than\ the\ radiation\ dominant\ era\ and\ the\ curvature\ parameter\ is\ almost\ zero,\ however\ I\ will\ neglect\ the\ these\ effects.\ Then\ the\ Friedmann\ eq\ is
+\begin{align*}
+    H=\frac{\Dot{a}}{a}=H_0\sqrt{\Omega_ma^{-3}+\Omega_{\Lambda}}
+\end{align*}
+Using\ variable\ separation
+\begin{align*}
+    1=\frac{1}{H_0}\frac{\Dot{a}}{\sqrt{\Omega_ma^{-1}+\Omega_{\Lambda}a^2}}
+\end{align*}
+Integrating\ this\ equation\ from\ the\ singularity\ to\ the\ present
+\begin{align*}
+    t&=\frac{1}{H_0}\int^t_0\frac{\Dot{a}dt}{\sqrt{\Omega_ma^{-1}+\Omega_{\Lambda}a^2}}\\
+    &=\frac{1}{H_0}\int^1_0\frac{\sqrt{a}da}{\sqrt{\Omega_m+\Omega_{\Lambda}a^3}}\\
+    &=\frac{1}{H_0}\left[\frac{2}{3\sqrt{\Omega_{\Lambda0}}}\mathrm{arctanh}\sqrt{\frac{\Omega_{\Lambda}a^3}{\Omega_{\mathrm{m}}+\Omega_{\Lambda}a^3}}\right]^1_0\\
+    &=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_{\Lambda}}}\mathrm{arctanh}\sqrt{\frac{\Omega_{\Lambda}}{\Omega_{\mathrm{m}}+\Omega_{\Lambda}}}
+\end{align*}
+Therefore\ using\ $1pc=3.086\times10^{16}m$\ and\ the\ value\ of\ the\ cosmological\ parameters,\ numerical\ calculation
+\begin{align}
+    t\simeq13.7\ \rm{Gyr}
+\end{align}
+And\ the\ age\ quoted\ in\ the\ paper\ is
+\begin{align*}
+    t=13.8\ \rm{Gyr}
+\end{align*}
+These\ two\ results\ agree\ with\ each\ other,\ but\ isn't\ exactly\ equal.\ The\ difference\ is\ due\ to\ the\ approximation\ that\ the\ contributions\ of\ the\ radiation\ and\ curvature\ is\ negligible.
+
+\section{Density\ parameter\ of\ baryon\ and\ radiation}
+From\ "rpp2022-rev-astrophysical-constants.pdf"\ of\ the\ Particle\ Data\ Group
+\begin{align}
+    \Omega_{b0}&=0.0493(6)\\
+    \Omega_{\gamma0}&=5.38(15)\times10^{-5}
+\end{align}
+
+\section{The\ sound\ horizon\ at\ $z=1100$}
+The\ size\ of\ the\ sound\ horizon\ is
+\begin{align*}
+    d(t)=\int^{t_{dec}}_{0}\frac{c_sdt}{a(t)}=\int^{a_{dec}}_{0}\frac{c_sda}{a\Dot{a}}=\int^{a_{dec}}_0\frac{c_sda}{a^2H}
+\end{align*}
+Changing\ variables
+\begin{align*}
+    d(t)=\int^{\infty}_{1100}dz\frac{c_s}{H}
+\end{align*}
+Next,\ I\ will\ derive\ the\ sound\ speed\ with\ the\ effect\ of\ baryon.\ Ignoring\ the\ effect\ of\ the\ curvature\ and\ cosmological\ constant\ and\ using\ the\ equation\ of\ state
+\begin{align*}
+    c_s^2&=\frac{\delta P_{\gamma}+\delta P_{b}}{\delta\rho_{\gamma}+\delta\rho_b}=\frac{1}{3}\frac{\delta\rho_{\gamma}}{\delta\rho_{\gamma}+\delta\rho_b}=\frac{1}{3}\frac{1}{1+\frac{\delta\rho_{b}}{\delta\rho_{\gamma}}}
+\end{align*}
+Assuming\ the\ adiabatic\ perturbation
+\begin{align*}
+    c_s^2=\frac{1}{3}\frac{1}{1+\frac{3}{4}\frac{\Bar{\rho}_b}{\Bar{\rho}_{\gamma}}}=\frac{1}{3}\frac{1}{1+\frac{3}{4}\frac{\Omega_b(1+z)^{3}}{\Omega_{\gamma}(1+z)^{4}}}
+\end{align*}
+So\ the\ size\ of\ sound\ horizon\ is
+\begin{align}
+    d(t)&=\int^{\infty}_{1100}dz\sqrt{\frac{1}{3}\frac{1}{1+\frac{3}{4}\frac{\Omega_b(1+z)^{3}}{\Omega_{\gamma}(1+z)^{4}}}}H_0^{-1}\frac{c}{\sqrt{\Omega_r(1+z)^4+\Omega_m(1+z)^3}}\nonumber\\
+    &\simeq140\ \rm{Mpc}
+\end{align}
+
+\section{Number\ density\ of\ CMB}
+Because\ photon\ is\ boson\ and\ chemical\ potential\ is\ zero,\ the\ number\ density\ in\ natural\ units\ is
+\begin{align*}
+    n_{\gamma}&=g_{\gamma}\int\frac{d^3p}{(2\pi)^3}\frac{1}{\exp\left[\frac{p}{T}\right]-1}\\
+    &=\frac{2}{2\pi^2}\int^{\infty}_0dp\frac{p^2}{\exp\left[\frac{p}{T}\right]-1}
+\end{align*}
+Changing\ variables\ $x=p/T$
+\begin{align*}
+    n_{\gamma}&=\frac{T^3}{\pi^2}\int^{\infty}_0dx\frac{x^2}{\exp(x)-1}\\
+    &=\frac{T^3}{\pi^2}\zeta(3)\Gamma(3)=\frac{2T^3}{\pi^2}\zeta(3)
+\end{align*}
+Using\ dimensional\ analysis\ and\ the\ present\ CMB\ temperature
+\begin{align*}
+    T_0=2.73\ \rm{K}
+\end{align*}
+Therefore
+\begin{align}
+    n_{\gamma}=\frac{2\zeta(3)}{\pi^2}\left(\frac{k_BT}{\hbar c}\right)^3\ \rm{/m^3}\simeq410\ \rm{/cm^3}
+\end{align}
+
+\section{The\ power\ of\ CMB}
+The\ CMB\ spectrum\ satisfies\ the\ planck\ distribution\ of\ CMB\ temperature\ $T_0$
+\begin{align*}
+    I(\nu,T_0)=\frac{2h\nu^3}{c^2}\frac{1}{\exp\left(\frac{h\nu}{k_BT_0}\right)-1}\ [\rm{J/m^2}]
+\end{align*}
+where\ CMB\ temperature\ is
+\begin{align*}
+    T_0=2.725\ \rm{K}
+\end{align*}
+In\ order\ to\ match\ the\ dimension\ with\ "J",\ multiplying\ the\ area\ and\ the\ solid\ angle
+\begin{align*}
+    I\ \to\ &\frac{2h\nu^3}{c^2}\frac{A\Omega}{\exp\left(\frac{h\nu}{k_BT_0}\right)-1}\\
+    =&\frac{2h\nu^3}{c^2}\frac{\lambda^2}{\exp\left(\frac{h\nu}{k_BT_0}\right)-1}\\
+    =&\frac{2h\nu}{\exp\left(\frac{h\nu}{k_BT_0}\right)-1}\ [\rm{J}]
+\end{align*}
+Integrating\ this\ quantity\ at\ 150\ GHz\ with\ $\pm$15\%\ bandwidth,\ the\ power\ of\ CMB\ is
+\begin{align}
+    \int^{172.5GHz}_{127.5GHz}d\nu\frac{2h\nu}{\exp\left(\frac{h\nu}{k_BT_0}\right)-1}\ [\rm{W}]\simeq6.93\times10^{-13}\ W
+\end{align}
+
+\section{The\ Sacks-Wolfe\ effect}
+For\ the\ anisotropy\ of\ CMB\ temperature
+\begin{align*}
+    \frac{\Delta T}{T}(\hat{n})=\frac{\delta T(t_L,\bm{x})}{T(t_L)}+\Phi(t_L,\hat{n}r_L)-\Phi(t_0,0)+\int^{t_0}_{t_L}dt(\Dot{\Phi}+\Dot{\Psi})(\hat{n}r)
+\end{align*}
+
+The\ second\ term\ and\ third\ term\ in\ R.H.S\ are\ the\ Sacks-Wolf\ effect.\ This\ effect\ is\ due\ to\ the\ gravitational\ redshift\ by\ photon\ climbing\ the\ gravitational\ potential\ $\Phi$\ from\ the\ last-scattering\ surface\ to\ observation\ point.
+
+The\ fourth\ term\ in\ R.H.S\ is\ the\ integrated\ Sacks-Wolf\ effect.\ I\ wrote\ only\ the\ contribution\ from\ scalar\ perturbation.\ This\ effect\ is\ due\ to\ the\ evolution\ (time\ dependence)\ of\ the\ gravitational\ potential\ or\ the\ spacetime\ perturbation.\ If\ there\ is\ no\ time\ dependence,\ the\ gravitational\ redshift\ is\ determined\ by\ only\ the\ Sacks-Wolf\ effect.\ Supposing\ the\ case\ that\ the\ gravitational\ potential\ decreases\ for\ time,\ however\ the\ potential\ that\ photon\ was\ supposed\ to\ climb\ decrease\ and\ the\ gravitational\ redshift\ is\ modified.
+
+\section{E-mode\ and\ B-mode}
+E-mode\ is\ the\ polarization\ whose\ directions\ are\ parallel\ or\  perpendicular\ to\ the\ wavevector.\ On\ the\ other\ hand,\ B-mode\ is\ the\ polarization\ whose\ directions\ are\ 45\ $\deg$\ from\ the\ wavevector.
+
+\section{The\ intensity\ response}
+Because\ the\ stokes\ vector\ is
+\begin{align*}
+    S=\begin{pmatrix}
+        I\\
+        Q\\
+        U\\
+        V
+    \end{pmatrix}=\begin{pmatrix}
+        E^2_{x0}+E^2_{y0}\\
+        E^2_{x0}-E^2_{y0}\\
+        2E_{x0}E_{y0}\cos{(\delta_x-\delta_y)}\\
+        2E_{x0}E_{y0}\sin{(\delta_x-\delta_y)}
+    \end{pmatrix}
+\end{align*}
+in\ the\ given\ case\ $V=0$,
+\begin{align*}
+    \delta_x-\delta_y=0
+\end{align*}
+Therefore\ the\ input\ stokes\ vector\ is
+\begin{align*}
+    S=\begin{pmatrix}
+        I\\
+        Q\\
+        U\\
+        0
+    \end{pmatrix}=\begin{pmatrix}
+        E^2_{x0}+E^2_{y0}\\
+        E^2_{x0}-E^2_{y0}\\
+        \pm2E_{x0}E_{y0}\\
+        0
+    \end{pmatrix}
+\end{align*}
+where\ I\ measures\ the\ intensity\ of\ radiation\ and\ Q,U,V\ measure\ the\ polarization\ state.\ Therefore\ I\ should\ the\ intensity\ response\ $I^{\prime}$\ with\ an\ arbitrary\ orientation\ $\theta$.\ In\ this\ case\ the\ electric\ field\ is
+\begin{align*}
+    \begin{pmatrix}
+        E_x^{\prime}\\
+        E_y^{\prime}
+    \end{pmatrix}=\begin{pmatrix}
+        \cos{\theta}&\sin{\theta}\\
+        -\sin{\theta}&\cos{\theta}
+    \end{pmatrix}\begin{pmatrix}
+        E_x\\
+        E_y
+    \end{pmatrix}
+\end{align*}
+Therefore\ the\ intensity\ response\ is
+\begin{align}
+    I^{\prime}&=E^{\prime2}_{X0}+E^{\prime2}_{y0}\nonumber\\
+    &=(E_{x0}\cos\theta+E_{y0}\sin\theta)^2+(-E_{x0}\sin\theta+E_{y0}\cos\theta)^2\nonumber\\
+    &=E^2_{x0}+E^2_{y0}=I
+\end{align}
+
+\section{What\ a\ telescope\ sees}
+\begin{itemize}
+    \item the\ low\ temperature\ interstellar\ medium
+    \item the\ astronomical\ object\ in\ early\ universe
+\end{itemize}
+
+\begin{thebibliography}{99}
+\bibitem{}https://astro-dic.jp/millimeter-radio-wave/
+\bibitem{}http://www.ioa.s.u-tokyo.ac.jp/~kkohno/wiki/index.php?
+\end{thebibliography}
