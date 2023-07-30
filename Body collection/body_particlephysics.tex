@@ -1,0 +1,228 @@
+\section{Deuteron Magnetic Moment}
+\subsection{parity even}
+The given ground state has $J_d=1$, so
+\begin{align*}
+    \mu_d&=\frac{\mu_N}{2}\braket{J_d,J_d|(\bm{L}_p+g_p(2\bm{S}_p)+g_n(2\bm{S}_p))\cdot\bm{J}|J_d,J_d}\\
+    &=\frac{\mu_N}{2}\braket{J_d,J_d|(\frac{\bm{L}}{2}+g_p(2\frac{\bm{S}}{2})+g_n(2\frac{\bm{S}}{2})\cdot\bm{J}|J_d,J_d}\\
+    &=\frac{\mu_N}{4}\braket{J_d,J_d|(\bm{L}+2(g_p+g_n)\bm{S})\cdot\bm{J}|J_d,J_d}\\
+    &=\frac{\mu_N}{4}\braket{J_d,J_d|\bm{L}^2+\bm{L}\cdot\bm{S}+2(g_p+g_n)\bm{S}\cdot\bm{L}+2(g_p+g_n)\bm{S}^2|J_d,J_d}
+\end{align*}
+where because
+\begin{align*}
+    \bm{J}^2&=\bm{L}^2+\bm{S}^2+2\bm{L}\cdot\bm{S}\\
+    \bm{L}\cdot\bm{S}&=\frac{\bm{J}^2-\bm{L}^2-\bm{S}^2}{2}
+\end{align*}
+therefore
+\begin{align*}
+    \mu_d&=\frac{\mu_N}{4}\braket{J_d,J_d|\left(g_p+g_n+\frac{1}{2}\right)\bm{J}^2-\left(g_p+g_n-\frac{1}{2}\right)(\bm{L}^2-\bm{S}^2)|J_d,J_d}
+\end{align*}
+For the ground state
+\begin{align*}
+    \mu_d&=\frac{\mu_N}{4}[\cos^2{w_0}\braket{^3S_1|\cdots|^3S_1}+\sin^2{w_0}\braket{^3D_1|\cdots|^3D_1}\\
+    &\ \ \ \ \ \ \ \ \ \ +\sin{w_0}\cos{w_0}(\braket{^3S_1|\cdots|^3D_1}+\braket{^3D_1|\cdots|^3S_1})]\\
+    &=\frac{\mu_d}{4}\cos^2{w_0}\left[\left(g_p+g_n+\frac{1}{2}\right)2+\left(g_p+g_n-\frac{1}{2}\right)2\right]\\
+    &\ \ \ \ \ +\frac{\mu_d}{4}\sin^2{w_0}\left[\left(g_p+g_n+\frac{1}{2}\right)2-\left(g_p+g_n-\frac{1}{2}\right)4\right]\\
+    &=\frac{\mu_d}{4}[4(g_p+g_n)\cos^2{w_0}+(3-2g_p-2g_n)\sin^2{w_0}]
+\end{align*}
+Substituting the values of $g_p$ and $g_n$
+\begin{align}
+    \mu_d&\simeq(0.88\cos^2{w_0}+0.31\sin^2{w_0})\mu_N\nonumber\\
+    &=(0.88-0.57\sin^2{w_0})\mu_N
+\end{align}
+Therefore the value of $\sin^2{w_0}$ to reproduce the experimental value is
+\begin{align}
+    \sin^2{w_0}\simeq0.040
+\end{align}
+\subsection{Assuming parity odd}
+I define the parity odd deuteron state as
+\begin{align*}
+    \ket{d}\simeq\cos{w}\ket{^1P_1}+\sin{w}\ket{^3P_1}
+\end{align*}
+In this case, the magnetic moment is
+\begin{align*}
+    \mu_d&=\frac{\mu_N}{4}\cos^2{w}\left[\left(g_p+g_n+\frac{1}{2}\right)2-\left(g_p+g_n-\frac{1}{2}\right)2\right]\\
+    &\ \ \ \ +\frac{\mu_N}{4}\sin^2{w}\left[\left(g_p+g_n+\frac{1}{2}\right)2-\left(g_p+g_n-\frac{1}{2}\right)0\right]\\
+    &=\frac{\mu_N}{4}[2\cos^2{w}+(1+2g_p+2g_n)\sin^2{w}]
+\end{align*}
+Substituting the values of $g_p$ and $g_n$
+\begin{align}
+    \mu_d&\simeq(0.5\cos^2{w}+0.69\sin^2{w})\mu_N\nonumber\\
+    &=(0.5+0.19\sin^2{w})\mu_N
+\end{align}
+Because the value of $\sin^2{w_0}$ to reproduce the experimental value is
+\begin{align}
+    \sin^2{w}\simeq1.9
+\end{align}
+so this parity odd state can't reproduce the experimental value.
+\clearpage
+\section{Spontaneous Symmetry Breaking}
+\subsection{Confirmation SU(3) inv}
+The scalar fields transform as
+\begin{align*}
+    \phi\ \to\ \exp\left(i\alpha^at^a\right)\phi
+\end{align*}
+where $t^a$ is the generators of SU(3), in other words the Gell-Mann matrices devided 2. Then the transformation of kinetic term is
+\begin{align}
+    \partial^{\mu}\phi^{\dag}\partial_{\mu}\phi\ \to\ &[\partial^{\mu}\phi^{\dag}\exp\left(-i\alpha^at^a\right)][\partial_{\mu}\exp\left(i\alpha^at^a\right)\phi]\nonumber\\
+    =&(\partial^{\mu}\phi^{\dag})\exp\left(-i\alpha^at^a\right)\exp\left(i\alpha^at^a\right)(\partial_{\mu}\phi)\nonumber\\
+    =&\partial^{\mu}\phi^{\dag}\partial_{\mu}\phi
+\end{align}
+where I used the transform matrix is unitary matrix. The transformation of potential terms is
+\begin{align}
+    |\phi|^2=\phi^{\dag}\phi\ \to\ &\phi^{\dag}\exp\left(-i\alpha^at^a\right)\exp\left(i\alpha^at^a\right)\phi\nonumber\\
+    =&\phi^{\dag}\phi=|\phi|^2
+\end{align}
+and
+\begin{align}
+    |\phi_1\phi_2^*|^2=|\phi_2^{\dag}\phi_1|^2\ \to\ &|\phi_2^{\dag}\exp\left(-i\alpha^at^a\right)\exp\left(i\alpha^at^a\right)\phi_1|^2\nonumber\\
+    =&|\phi_2^{\dag}\phi_1|^2=|\phi_1\phi_2^*|^2
+\end{align}
+Therefore the each terms transformed under SU(3) are invariant, so the given Lagrangian is also invariant.
+
+\subsection{Vacuum expectation}
+I should find the values of $\phi_1$ and $\phi_2$ to minimize the value of potential terms, ignoring  $\lambda_{12}$ term. The vacuum expectation values are
+\begin{align}\label{8}
+    \begin{cases}
+        |\phi_1|,|\phi_2|\to\pm\infty&\rm{for}\ \lambda_1,\lambda_2<0\\
+        |\phi_1|\to\pm\infty,|\phi_2|=v_2&\rm{for}\ \lambda_1<0,\lambda_2>0\\
+        |\phi_1|=v_1,|\phi_2|\to\pm\infty&\rm{for}\ \lambda_1>0,\lambda_2<0\\
+        |\phi_1|=v_1,|\phi_2|=v_2&\rm{for}\ \lambda_1,\lambda_2>0
+    \end{cases}
+\end{align}
+As an example in the last case, using the SU(3) symmetry of the vacuum expectation we can always take
+\begin{align*}
+    \phi_1=\begin{pmatrix}
+        0\\0\\v_1
+    \end{pmatrix}
+\end{align*}
+
+\subsection{Massless bosons for finite $\lambda_{12}$}
+At first, I will derive the vacuum expectation values for finite $\lambda_{12}$. To do this, all three potential terms must be zero, so in addition to \eqref{8}
+\begin{align*}
+    |\phi_2^{\dag}\phi_1|=0
+\end{align*}
+Therefore I can take using SU(3) symmetry
+\begin{align*}
+    \phi_1=\begin{pmatrix}
+        0\\0\\v_1
+    \end{pmatrix}\ \ ,\ \ \phi_2=\begin{pmatrix}
+        0\\v_2\\0
+    \end{pmatrix}
+\end{align*}
+Then I will calculate the infinitesimal transformation of the vacuum expectation values
+\begin{align*}
+    \delta\phi=i\alpha^at^a\phi=\frac{i}{2}\begin{pmatrix}
+        \alpha^3+\alpha^8&\alpha^1-i\alpha^2&\alpha^4-i\alpha^5\\
+        \alpha^1+i\alpha^2&-\alpha^3+\alpha^8&\alpha^6-i\alpha^7\\
+        \alpha^4+i\alpha^5&\alpha^6+i\alpha^7&-2\alpha^8
+    \end{pmatrix}\phi
+\end{align*}
+Using this for each fields
+\begin{align*}
+    \delta\phi_1=\frac{i}{2}\begin{pmatrix}
+        \alpha^4-i\alpha^5\\
+        \alpha^6-i\alpha^7\\
+        -2\alpha^8
+    \end{pmatrix}v_1\ \ ,\ \ \delta\phi_2=\frac{i}{2}\begin{pmatrix}
+        \alpha^1-i\alpha^2\\
+        -\alpha^3+\alpha^8\\
+        \alpha^6+i\alpha^7
+    \end{pmatrix}v_2
+\end{align*}
+In order to vanish these quantities
+\begin{align*}
+    \alpha^a=0\ \ \ \ (a=1\sim8)
+\end{align*}
+Therefore SU(3) is completely broken. So 8 NG bosons appear. And $\phi_{1,2}$ are massive. \underline{Therefore 8 massless bosons exist.}
+
+\subsection{Massless bosons for vanishing $\lambda_{12}$}
+In this limit, I can take the following vacuum expectation values
+\begin{align*}
+    \phi_1=\begin{pmatrix}
+        0\\0\\v_1
+    \end{pmatrix}\ \ ,\ \ \phi_2=\begin{pmatrix}
+        0\\a\\b
+    \end{pmatrix}v_2
+\end{align*}
+where
+\begin{align*}
+    |a|^2+|b|^2=1
+\end{align*}
+As well as the case of finite $\lambda_{12}$, in order to vanish $\delta\phi_1$
+\begin{align*}
+    \alpha^a=0\ \ \ \ (a=4\sim8)
+\end{align*}
+Based on this, the infinitesimal transformation of the vacuum expectation value of $\phi_2$ is
+\begin{align*}
+    \delta\phi_2=\frac{i}{2}\begin{pmatrix}
+        \alpha^1-i\alpha^2\\
+        -\alpha^3\\
+        0
+    \end{pmatrix}av_2
+\end{align*}
+If $a\neq0$, the result is same as that of the case of finite $\lambda_{12}$, so 8 massless bosons exist. Probably we are interested in the case of $a=0$. In this case
+\begin{align*}
+    \alpha^b\neq0\ \ \ \ (b=1\sim3)
+\end{align*}
+Therefore SU(3) is broken to SU(2), so \underline{5 massless bosons exist.}
+
+\subsection{SU(3) gauge symmetry}
+When the model has SU(3) gauge symmetry, eight gauge fields $W^a$ are introduced. Then the covariant derivative is
+\begin{align*}
+    D_{\mu}=\partial_{\mu}-igW^a_{\mu}t^a
+\end{align*}
+In order to investigate the mass of gauge fields, using the vacuum expectation values
+\begin{align*}
+    (D^{\mu}\phi_1)^{\dag}D_{\mu}\phi_1&=g^2(W^{a\mu}t^a\phi_1)^{\dag}W^b_{\mu}t^b\phi_1\\
+    &=g^2\left|\frac{1}{2}\begin{pmatrix}
+        W^3+W^8&W^1-iW^2&W^4-iW^5\\
+        W^1+iW^2&-W^3+W^8&W^6-iW^7\\
+        W^4+iW^5&W^6+iW^7&-2W^8
+    \end{pmatrix}\begin{pmatrix}
+        0\\0\\v_1
+    \end{pmatrix}\right|^2\\
+    &=\frac{g^2v_1^2}{4}\left|\begin{pmatrix}
+        W^4-iW^5\\W^6-iW^7\\-2W^8
+    \end{pmatrix}\right|^2\\
+    &=\frac{g^2v_1^2}{4}\left[(W^4_{\mu})^2+(W^5_{\mu})^2+(W^6_{\mu})^2+(W^7_{\mu})^2+4(W^8_{\mu})^2\right]
+\end{align*}
+Thus some gauge bosons get their mass. I need divide the cases to calculate the kinetic term of $\phi_2$.
+
+In the case of $\lambda_{12}\neq0$
+\begin{align*}
+    (D^{\mu}\phi_2)^{\dag}D_{\mu}\phi_2&=g^2\left|\frac{1}{2}\begin{pmatrix}
+        W^3+W^8&W^1-iW^2&W^4-iW^5\\
+        W^1+iW^2&-W^3+W^8&W^6-iW^7\\
+        W^4+iW^5&W^6+iW^7&-2W^8
+    \end{pmatrix}\begin{pmatrix}
+        0\\v_2\\0
+    \end{pmatrix}\right|^2\\
+    &=\frac{g^2v_2^2}{4}\left|\begin{pmatrix}
+        W^1-iW^2\\
+        -W^3+W^8\\
+        W^6-iW^7
+    \end{pmatrix}\right|^2\\
+    &=\frac{g^2v_2^2}{4}\left[(W^1_{\mu})^2+(W^2_{\mu})^2+(W^6_{\mu})^2+(W^7_{\mu})^2+(W_{\mu}^8-W_{\mu}^3)^2\right]
+\end{align*}
+therefore all gauge bosons get their mass and \underline{no massless state exist.}
+
+In the case of $\lambda_{12}=0$, I will consider
+\begin{align*}
+    \phi_2=\begin{pmatrix}
+        0\\0\\v_2
+    \end{pmatrix}
+\end{align*}
+in which we are interested. Then the kinetic term is
+\begin{align*}
+    (D^{\mu}\phi_2)^{\dag}D_{\mu}\phi_2&=g^2\left|\frac{1}{2}\begin{pmatrix}
+        W^3+W^8&W^1-iW^2&W^4-iW^5\\
+        W^1+iW^2&-W^3+W^8&W^6-iW^7\\
+        W^4+iW^5&W^6+iW^7&-2W^8
+    \end{pmatrix}\begin{pmatrix}
+        0\\0\\v_2
+    \end{pmatrix}\right|^2\\
+    &=\frac{v_2^2}{v_1^2}(D^{\mu}\phi_1)^{\dag}D_{\mu}\phi_1
+\end{align*}
+Therefore 5 $(a=4\sim8)$ gauge bosons get their mass and \underline{3 massless states exist.}
+
+\subsection{radiative corrections}
