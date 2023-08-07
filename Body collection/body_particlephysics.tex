@@ -171,7 +171,7 @@ When the model has SU(3) gauge symmetry, eight gauge fields $W^a$ are introduced
 \begin{align*}
     D_{\mu}=\partial_{\mu}-igW^a_{\mu}t^a
 \end{align*}
-In order to investigate the mass of gauge fields, using the vacuum expectation values
+In order to investigate the mass of gauge fields, using the vacuum expectation value (I fixed the gauge for $\phi_1=(0,0,v_1+h(x))^T$)
 \begin{align*}
     (D^{\mu}\phi_1)^{\dag}D_{\mu}\phi_1&=g^2(W^{a\mu}t^a\phi_1)^{\dag}W^b_{\mu}t^b\phi_1\\
     &=g^2\left|\frac{1}{2}\begin{pmatrix}
@@ -204,25 +204,14 @@ In the case of $\lambda_{12}\neq0$
     \end{pmatrix}\right|^2\\
     &=\frac{g^2v_2^2}{4}\left[(W^1_{\mu})^2+(W^2_{\mu})^2+(W^6_{\mu})^2+(W^7_{\mu})^2+(W_{\mu}^8-W_{\mu}^3)^2\right]
 \end{align*}
-therefore all gauge bosons get their mass and \underline{no massless state exist.}
+therefore all gauge bosons get their mass and \underline{no massless state exist.} (I used $\phi_2=(0,v_2,0)^T$ in order to derive the mass of gauge bosons, so exactly $\phi_2$ is expanded around the vacuum expectation value. Then $\phi_2$ has first and third SU(3) components.) 
 
-In the case of $\lambda_{12}=0$, I will consider
+In the case of $\lambda_{12}=0$, I will consider the vacuum expectation value 
 \begin{align*}
     \phi_2=\begin{pmatrix}
         0\\0\\v_2
     \end{pmatrix}
 \end{align*}
-in which we are interested. Then the kinetic term is
-\begin{align*}
-    (D^{\mu}\phi_2)^{\dag}D_{\mu}\phi_2&=g^2\left|\frac{1}{2}\begin{pmatrix}
-        W^3+W^8&W^1-iW^2&W^4-iW^5\\
-        W^1+iW^2&-W^3+W^8&W^6-iW^7\\
-        W^4+iW^5&W^6+iW^7&-2W^8
-    \end{pmatrix}\begin{pmatrix}
-        0\\0\\v_2
-    \end{pmatrix}\right|^2\\
-    &=\frac{v_2^2}{v_1^2}(D^{\mu}\phi_1)^{\dag}D_{\mu}\phi_1
-\end{align*}
-Therefore 5 $(a=4\sim8)$ gauge bosons get their mass and \underline{3 massless states exist.}
+But exactly field $\phi_2$ has first and second SU(3) components, so the answer is same as the case of $a\neq0$.Therefore \underline{no massless states exist.}
 
 \subsection{radiative corrections}

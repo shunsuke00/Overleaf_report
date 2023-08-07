@@ -210,3 +210,73 @@ The\ coupling\ constant\ between\ Higgs\ and\ fermions\ is\ proportional\ to\ fe
 
 \section{Feynmann\ diagram}
 I\ drawed\ on\ next\ page.
+
+\section{Branching\ fraction\ of\ B}
+From\ the\ problem\ statement,\ I\ consider\ the\ decay\ processes\ via\ a\ weak\ interaction.\ The\ decay\ of\ B\ meson\ is\ mainly\ contributed\ by\ the\ transition\ of\ bottom\ quark.
+
+Because\ the\ mass\ of\ bottom\ quark\ is\ 4\ GeV\ and\ the\ mass\ of\ top\ quark\ is\ 170\ GeV,\ the\ transition\ to\ top\ quark\ is\ negligible.\ And\ because
+\begin{align*}
+    V_{ub}\simeq4\times10^{-3}\ \ ,\ \ V_{cb}\simeq4\times10^{-2}
+\end{align*}
+the\ branching\ fraction\ of\ the\ transition\ of\ bottom\ quark\ is
+\begin{align*}
+    \frac{Br(b\to u)}{Br(b\to c)}=\left(\frac{V_{ub}}{V_{cb}}\right)^2\simeq10^{-2}
+\end{align*}
+suppressed.\ So\ the\ transition\ $b\to u$\ is\ negligible.
+
+Therefore\ I\ should\ take\ into\ account\ the\ transition\ $b\to s$\ with\ loop\ diagram.
+
+I\ can't\ estimate\ branching\ fraction\ qualitatively.
+
+\section{Detector\ model}
+\subsection{Probability\ density\ function}
+Because\ the\ only\ $\Delta L$\ in\ range\ of\ 
+\begin{align*}
+    -\frac{l}{2}\leq\Delta L\leq\frac{l}{2}
+\end{align*}
+is\ allowed,\ the\ probability\ function\ is
+\begin{align}
+    P(\Delta L)=\frac{1}{l}\theta(l/2-|\Delta L|)
+\end{align}
+\subsection{The\ standard\ deviation}
+The\ mean\ value\ is
+\begin{align*}
+    \mu&=\int^{\infty}_{-\infty}xP(x)dx\\
+    &=\frac{1}{l}\int^{\infty}_{-\infty}x\theta(l/2-|x|)\\
+    &=\frac{1}{l}\int^{\frac{l}{2}}_{-\frac{l}{2}}xdx=\frac{1}{l}\left[\frac{x^2}{2}\right]^{\frac{l}{2}}_{-\frac{l}{2}}=0
+\end{align*}
+So\ the\ variance\ is
+\begin{align*}
+    \sigma^2&=\int^{\infty}_{-\infty}x^2P(x)dx\\
+    &=\frac{1}{l}\left[\frac{x^3}{3}\right]^{\frac{l}{2}}_{-\frac{l}{2}}=\frac{l^2}{12}
+\end{align*}
+Therefore\ the\ standard\ deviation\ is
+\begin{align}
+    \sigma=\sqrt{\frac{l^2}{12}}=\frac{l}{2\sqrt{3}}
+\end{align}
+
+\section{The\ experimental\ set\ up\ of\ Daya\ Bay\ experiment}
+\textbf{Abbreviations\ and\ terminology}
+
+At\ first,\ I\ will\ explain\ the\ some\ abbreviations\ and\ terminology.\ "Gd\ LS"\ is\ the\ gadolinium-doped\ liquid\ scintillator.
+
+"ADs"\ means\ anti-neutrino\ detectors.\ This\ is\ 3\ nested\ cylindrical\ vessels.\ The\ inner\ acrylic\ vessel\ is\ filled\ with\ 0.1\ \%\ GD\ LS\ which\ is\ 20t.\ This\ is\ the\ anti-neutrino\ target.\ On\ the\ other\ hand,\ the\ outer\ acrylic\ vessel\ is\ filled\ with\ the\ undoped\ LS.\ This\ increases\ the\ efficiency\ for\ detecting\ photon.
+
+"EH"\ is\ the\ experimental\ hall,\ in\ which\ ADs\ is\ installed.\\
+\textbf{The\ set\ up}
+
+"PMTs"\ means\ photomultiplier\ tubes.
+
+There\ are\ three\ EHs\ (EH1,\ EH2,\ EH3).\ EH1\ and\ EH2\ include\ two\ ADs\ and\ EH3\ includes\ four\ ADs.\ The\ position\ relationship\ in\ EHs\ is\ that\ EH1\ is\ near\ EH2,\ and\ EH3\ is\ far\ from\ these\ two\ EHs.\ 
+
+And\ there\ are\ six\ reactor\ core\ relatively\ near\ EH1\ and\ EH2,\ in\ which\ anti-neutrino\ is\ produced.\ Two\ of\ cores\ are\ 365m\ from\ EH1,\ and\ four\ of\ cores\ are\ 505m\ from\ EH2.\ And\ the\ average\ distance\ to\ EH3\ is\ 1663m.
+
+And\ PMTs\ are\ uniformly\ positioned\ on the\ cylinder\ of\ outermost\ stainless\ steel\ vessel\ and\ immersed\ in\ mineral\ oil.\\
+\textbf{History}
+
+This\ experiment\ started\ to\ take\ the\ data\ with\ six\ ADs\ on\ 2011/12/24.\ A\ AD\ was\ installed\ in\ EH2\ on\ 2012/7/28\ and\ the\ last\ AD\ was\ installed\ in\ EH3\ on\ 2012/10/19.\ And\ this\ experiment\ lasted\ until\ 2016/12/20.
+
+\section{The\ D0\ collaboration}
+The\ signature\ is\ that\ top\ quark\ is\ produced\ in\ pair\ by\ strong\ interaction\ and\ decay\ according\ to\ $t\Bar{t}\to W^+W^-b\Bar{b}$.\ The\ reason\ why\ top\ quark\ don't\ form\ a\ hadron\ is\ that\ the\ lifetime\ is\ too\ short.\ In\ particular,\ the\ weak\ bosons\ have\ the\ decaying\ channels\ that\ are\ dilepton\ channel\ and\ single-lepton\ channel.\ In\ the\ dilepton\ channel\ the\ two\ weak\ bosons\ decay\ to\ $e\mu$+jets,\ ee+jets,\ $\mu\mu$+jets.\ In\ the\ single-lepton\ channel\ a\ weak\ boson\ decays\ to\ $e$+jets,\ $\mu$+jets.
+
+Next,\ I\ will\ explain\ the\ detector\ setup\ to\ catch\ this\ signature.\ The\ detector\ surroundｓ\ the\ $p\Bar{p}$\ collision\ point\ and\ the\ detector\ consists\ of\ three\ nested\ shells.\ The\ innermost\ shell\ is\ the\ tracking\ and\ transition\ radiation\ detectors,\ which\ consists\ of\ the\ Central\ detector,\ the\ Vertex\ Drift\ Chamber,\ the\ transition\ radiation\ detector,\ the\ Central\ Drift\ Chamber,\ two\ Forward\ Drift\ Chambers.\ And\ the\ role\ of\ this\ shell\ is\ distinguish\ single\ electrons\ from\ clese-spaced\ convention\ pairs.The\ middle\ shell\ is\ calorimetry,\ which\ measures\ the\ energy\ of\ the\ electrons,\ photons,\ jets\ and\ identifies\ them.\ The\ outermost\ shell\ is\ the\ muon\ detectors,\ which\ identifies\ produced\ muons\ and\ determines\ their\ trajectories\ and\ momenta.
